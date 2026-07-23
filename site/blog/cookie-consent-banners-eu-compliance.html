@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cookie Consent Banners: What EU Law Actually Requires (2026) — NormaKit</title>
+<meta name="description" content="What a GDPR/ePrivacy-compliant cookie banner must actually do: no pre-ticked boxes, equal-prominence reject button, consent logging. The most common mistake that makes freelancer cookie banners non-compliant, and which cookies really need consent.">
+<link rel="canonical" href="https://normakit.pages.dev/blog/cookie-consent-banners-eu-compliance.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cookie Consent Banners: What EU Law Actually Requires (2026)">
+<meta property="og:description" content="No pre-ticked boxes, an equal-prominence reject button, and logged consent — what EU/ePrivacy law actually requires from a cookie banner, and the mistake that trips up most freelancer sites.">
+<meta property="og:url" content="https://normakit.pages.dev/blog/cookie-consent-banners-eu-compliance.html">
+<meta name="twitter:card" content="summary">
+<style>
+  :root {
+    --ink: #1a1d24; --ink-soft: #545b68; --bg: #fbfbfa; --card: #ffffff;
+    --line: #e4e4e0; --accent: #1f5c4c; --accent-ink: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.6; }
+  .wrap { max-width: 700px; margin: 0 auto; padding: 0 24px 64px; }
+  nav.top { padding: 24px 0; }
+  nav.top a { color: var(--accent); text-decoration: none; font-weight: 600; font-size: 14px; }
+  .brand { font-weight: 700; font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
+  h1 { font-size: clamp(26px, 4vw, 34px); line-height: 1.2; margin: 0 0 10px; }
+  .meta { color: var(--ink-soft); font-size: 13.5px; margin-bottom: 32px; }
+  h2 { font-size: 20px; margin: 36px 0 14px; }
+  h3 { font-size: 16px; margin: 22px 0 8px; }
+  p, li { font-size: 15.5px; }
+  ul, ol { padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--ink-soft); font-weight: 600; font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.03em; }
+  .checklist { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+  .checklist li { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px 10px 36px; position: relative; font-size: 14.5px; }
+  .checklist li::before { content: "☐"; position: absolute; left: 12px; top: 9px; color: var(--accent); font-size: 15px; }
+  .callout { background: #fdf6e8; border: 1px solid #e8d8ab; border-radius: 10px; padding: 16px 18px; font-size: 14.5px; color: #6b5a1f; margin: 20px 0; }
+  .cta { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px; margin: 40px 0; }
+  .cta h3 { margin-top: 0; font-size: 18px; }
+  a.buy-btn { display: inline-block; text-decoration: none; background: var(--accent); color: var(--accent-ink); font-weight: 600; font-size: 15px; padding: 12px 20px; border-radius: 10px; margin-top: 8px; }
+  .disclaimer { font-size: 12.5px; color: var(--ink-soft); margin-top: 40px; border-top: 1px solid var(--line); padding-top: 16px; }
+  footer { font-size: 12.5px; color: var(--ink-soft); margin-top: 24px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="top"><a href="../index.html">&larr; NormaKit</a></nav>
+  <div class="brand">NormaKit Guide</div>
+  <h1>Cookie Consent Banners: What EU Law Actually Requires</h1>
+  <p class="meta">Practical guide · GDPR + ePrivacy Directive · applies to any site with EU visitors, not just EU-based businesses</p>
+
+  <p>Almost every freelancer or small-business site has a cookie banner. Very few are
+  actually compliant. The rules don't come from GDPR alone — they come from the
+  <b>ePrivacy Directive</b> (which governs storing or reading anything on a visitor's
+  device, cookies included) layered together with GDPR's consent standard. Get the
+  banner wrong and you're non-compliant even if your privacy policy is perfect.</p>
+
+  <h2>What a compliant cookie banner must actually do</h2>
+  <ul class="checklist">
+    <li><b>Appear before any non-necessary cookie is set.</b> Analytics, embedded
+    video, and marketing pixels may not fire until the visitor has actively
+    consented — not "by continuing to browse."</li>
+    <li><b>No pre-ticked boxes.</b> Every category other than strictly necessary
+    cookies must default to OFF. A banner that's pre-checked "accept" for anything
+    is not valid consent under current EDPB guidance.</li>
+    <li><b>"Reject all" as easy as "Accept all."</b> Same size, same visual weight,
+    same number of clicks — a prominent accept button next to a buried or
+    multi-step reject option is one of the most commonly sanctioned patterns.</li>
+    <li><b>A persistent way to change the choice later</b> — typically a "Cookie
+    settings" link in the footer, not a one-time banner with no revisit path.</li>
+    <li><b>Consent logged</b> (timestamp + what was chosen), so you can demonstrate
+    compliance later if asked.</li>
+  </ul>
+
+  <div class="callout">
+    <b>The most common mistake:</b> a banner that only offers "Accept" (or makes
+    "Accept" the only easy option, with "reject"/"manage preferences" hidden behind
+    an extra click). Several EU data protection authorities — including Italy's
+    Garante — have specifically flagged asymmetric accept/reject prominence as
+    invalid consent, not a minor styling issue.
+  </div>
+
+  <h2>Which cookies actually need consent?</h2>
+  <p>Not all of them. Strictly necessary cookies (session handling, security, load
+  balancing, remembering the visitor's cookie choice) are exempt and can be set
+  without asking. Everything else needs opt-in:</p>
+  <table>
+    <tr><th>Category</th><th>Consent required?</th><th>Typical example</th></tr>
+    <tr><td>Necessary</td><td>No — exempt</td><td>Session ID, CSRF token</td></tr>
+    <tr><td>Functional</td><td>Yes</td><td>Language/currency preference</td></tr>
+    <tr><td>Analytics</td><td>Yes (unless genuinely cookieless — see note below)</td><td>Google Analytics, Plausible</td></tr>
+    <tr><td>Marketing</td><td>Yes</td><td>Ad retargeting pixels</td></tr>
+  </table>
+  <p style="font-size:13.5px; color:var(--ink-soft);">Note: cookieless, non-tracking
+  analytics tools that don't set a persistent identifier can sit outside the cookie
+  banner requirement entirely (nothing is stored on the visitor's device) — but you
+  still owe visitors a plain-language disclosure that the analytics exist, since
+  that's a transparency question independent of the cookie/storage rule.</p>
+
+  <h2>Do you also need a Privacy Policy or a DPA?</h2>
+  <p>A cookie banner and cookie policy are one specific disclosure layered on top of
+  your general GDPR obligations, not a replacement for them. See our
+  <a href="gdpr-privacy-policy-checklist-freelancers.html">GDPR Privacy Policy
+  Checklist for Freelancers</a> for the seven things a compliant privacy policy must
+  state, and — if you process client data as a developer, marketer, or VA — our
+  <a href="data-processing-agreement-freelancers.html">DPA guide for freelancers</a>
+  for when Article 28 requires a separate written agreement.</p>
+
+  <h2>Quick self-audit</h2>
+  <ol>
+    <li>Load your site in a private/incognito window — does anything other than a
+    strictly-necessary cookie get set before you click anything?</li>
+    <li>Is "Reject all" (or equivalent) exactly as easy to find and click as
+    "Accept all"?</li>
+    <li>Are non-necessary categories off by default, with no pre-ticked boxes?</li>
+    <li>Is there a persistent way to change your choice later (footer link)?</li>
+    <li>Do you have a record of what visitors actually consented to?</li>
+  </ol>
+  <p>If you answered "no" or "not sure" to more than one, the banner likely needs a
+  rebuild, not a copy tweak.</p>
+
+  <div class="cta">
+    <h3>Don't want to draft all of this from scratch?</h3>
+    <p>NormaKit is a bilingual (EN/IT) GDPR document pack built for exactly this
+    situation: a ready-to-edit Cookie Policy (with banner copy and a cookie-category
+    table you fill in), Privacy Policy, consent clauses, a full Art. 28 DPA, a mini
+    Records-of-Processing (ROPA) template, and a breach-notification checklist —
+    €29 one-time, instant download, editable .docx and .pdf.</p>
+    <a class="buy-btn" href="../index.html">See what's included &rarr;</a>
+  </div>
+
+  <p class="disclaimer"><b>Not legal advice.</b> This guide is general information,
+  not a substitute for advice from a qualified lawyer or data protection professional
+  about your specific situation. NormaKit's templates are likewise informational
+  starting points, not legal advice, and should be reviewed and adapted before use.</p>
+
+  <footer><a href="../index.html">&larr; Back to NormaKit</a> · © 2026 NormaKit</footer>
+</div>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "082e73ff60604f31b0df22bc423c4206"}'></script>
+</body>
+</html>
