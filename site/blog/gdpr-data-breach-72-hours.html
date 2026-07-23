@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GDPR Data Breach: What to Do in the First 72 Hours — NormaKit</title>
+<meta name="description" content="A security incident just happened. What GDPR Art. 33/34 actually requires in the first 72 hours: whether you must notify the Garante, whether you must notify affected people, and the internal log you need either way.">
+<link rel="canonical" href="https://normakit.pages.dev/blog/gdpr-data-breach-72-hours">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GDPR Data Breach: What to Do in the First 72 Hours">
+<meta property="og:description" content="Contain, assess, and decide: who you must notify (Garante, affected people, both, or neither) under GDPR Art. 33/34, and the internal incident log you need regardless.">
+<meta property="og:url" content="https://normakit.pages.dev/blog/gdpr-data-breach-72-hours">
+<meta name="twitter:card" content="summary">
+<style>
+  :root {
+    --ink: #1a1d24; --ink-soft: #545b68; --bg: #fbfbfa; --card: #ffffff;
+    --line: #e4e4e0; --accent: #1f5c4c; --accent-ink: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.6; }
+  .wrap { max-width: 700px; margin: 0 auto; padding: 0 24px 64px; }
+  nav.top { padding: 24px 0; }
+  nav.top a { color: var(--accent); text-decoration: none; font-weight: 600; font-size: 14px; }
+  .brand { font-weight: 700; font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
+  h1 { font-size: clamp(26px, 4vw, 34px); line-height: 1.2; margin: 0 0 10px; }
+  .meta { color: var(--ink-soft); font-size: 13.5px; margin-bottom: 32px; }
+  h2 { font-size: 20px; margin: 36px 0 14px; }
+  h3 { font-size: 16px; margin: 22px 0 8px; }
+  p, li { font-size: 15.5px; }
+  ul, ol { padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--ink-soft); font-weight: 600; font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.03em; }
+  .checklist { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+  .checklist li { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px 10px 36px; position: relative; font-size: 14.5px; }
+  .checklist li::before { content: "☐"; position: absolute; left: 12px; top: 9px; color: var(--accent); font-size: 15px; }
+  .callout { background: #fdf6e8; border: 1px solid #e8d8ab; border-radius: 10px; padding: 16px 18px; font-size: 14.5px; color: #6b5a1f; margin: 20px 0; }
+  .cta { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px; margin: 40px 0; }
+  .cta h3 { margin-top: 0; font-size: 18px; }
+  a.buy-btn { display: inline-block; text-decoration: none; background: var(--accent); color: var(--accent-ink); font-weight: 600; font-size: 15px; padding: 12px 20px; border-radius: 10px; margin-top: 8px; }
+  .disclaimer { font-size: 12.5px; color: var(--ink-soft); margin-top: 40px; border-top: 1px solid var(--line); padding-top: 16px; }
+  footer { font-size: 12.5px; color: var(--ink-soft); margin-top: 24px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="top"><a href="../">&larr; NormaKit</a></nav>
+  <div class="brand">NormaKit Guide</div>
+  <h1>GDPR Data Breach: What to Do in the First 72 Hours</h1>
+  <p class="meta">Practical guide · GDPR Art. 33 &amp; 34 · applies the moment anyone on your team becomes aware of a possible breach</p>
+
+  <p>A "personal data breach" under GDPR is broader than most people assume: it's any
+  accidental or unlawful destruction, loss, alteration, or unauthorised disclosure of
+  or access to personal data. A lost laptop, an email sent to the wrong recipient, a
+  leaked spreadsheet, or ransomware all count — not just large-scale hacking. The
+  moment anyone on your team becomes aware, a clock starts. Here's what actually has
+  to happen next.</p>
+
+  <h2>Step 0 — the 72-hour clock</h2>
+  <div class="callout">
+    <b>The clock starts on awareness, not on the incident itself.</b> If you find out
+    on Tuesday about something that happened last week, your 72 hours (Art. 33) start
+    Tuesday. Log the exact date/time you became aware immediately — you'll need it.
+  </div>
+
+  <h2>Step 1 — contain and assess</h2>
+  <ul class="checklist">
+    <li><b>Contain it.</b> Revoke access, rotate passwords, isolate affected systems,
+    take a compromised service offline if needed.</li>
+    <li><b>Identify what happened.</b> What data, roughly how many people, and — this
+    matters most for severity — is any of it special-category data (health, etc.) or
+    financial/ID data?</li>
+    <li><b>Check if it's still ongoing.</b> Is data still being exposed right now?</li>
+    <li><b>Preserve evidence</b> (logs, screenshots) before remediating, where
+    possible — you'll need it to explain what happened later.</li>
+  </ul>
+
+  <h2>Do you have to notify the Garante (the supervisory authority)?</h2>
+  <p>Notify within 72 hours <b>unless</b> the breach is "unlikely to result in a risk
+  to the rights and freedoms of natural persons" (Art. 33(1)). Ask yourself:</p>
+  <ul>
+    <li>Could this data be used to harm the people affected — fraud, identity theft,
+    discrimination, reputational or financial harm?</li>
+    <li>Was the data encrypted or pseudonymised well enough that whoever accessed it
+    can't actually use it (e.g. a stolen backup, fully encrypted, key never exposed)?</li>
+    <li>How many people, and how sensitive is the data?</li>
+  </ul>
+  <p><b>If there's any real risk — the normal case for anything short of fully
+  encrypted, unreadable data — notify.</b> When genuinely unsure, notify anyway: the
+  penalty for failing to report a real breach is typically worse than the friction of
+  reporting one that turns out to be low-risk. If you can't finish your assessment
+  within 72 hours, notify anyway with your reasons for the delay (Art. 33(1) allows a
+  phased notification) — don't wait for a complete picture before the first report.</p>
+
+  <h2>Do you also have to notify the people affected?</h2>
+  <p>Separately, Art. 34 requires notifying affected individuals directly, without
+  undue delay, <b>only if the breach is likely to result in a HIGH risk</b> to them —
+  a higher bar than the Garante notification above. Ask:</p>
+  <ul>
+    <li>Is this the kind of data that causes serious harm if misused — passwords,
+    financial details, ID documents, health data, precise location?</li>
+    <li>Can the affected people protect themselves without knowing (e.g. changing a
+    reused password, watching for fraud)?</li>
+  </ul>
+  <p>You're exempt from notifying individuals if the data was encrypted/unintelligible
+  to whoever accessed it, if you've since taken measures that remove the high risk, or
+  if direct notice would take disproportionate effort — in which case a public notice
+  (e.g. a site-wide banner) can substitute, as long as it informs people just as
+  effectively.</p>
+
+  <table>
+    <tr><th>Question</th><th>If yes</th></tr>
+    <tr><td>Any real risk to affected people?</td><td>Notify the Garante within 72h</td></tr>
+    <tr><td>High risk specifically (sensitive data, real harm possible)?</td><td>Also notify affected individuals directly</td></tr>
+    <tr><td>Data was fully encrypted, key never exposed?</td><td>Often exempt from both — document why</td></tr>
+  </table>
+
+  <h2>The one step everyone forgets: the internal log</h2>
+  <p>Art. 33(5) requires you to document <b>every</b> breach internally — including
+  ones you decide not to report to anyone. The Garante can ask to see this log at any
+  time, and "we didn't think it was serious enough to write down" is not a defensible
+  answer if they do. At minimum, record: when discovered, when it happened, how it was
+  discovered, what data and how many people were affected, your risk assessment and
+  reasoning, whether you notified the Garante and/or individuals (and when), and what
+  you did to contain it and prevent it recurring.</p>
+
+  <h2>Related reading</h2>
+  <p>A breach-response plan sits alongside your other GDPR paperwork, not instead of
+  it. If a breach happens, you'll likely also need to check your
+  <a href="gdpr-privacy-policy-checklist-freelancers">Privacy Policy</a> covers what
+  you told people about your security measures, and — if the breach happened at a
+  processor working on your behalf (a developer, host, or agency) — your
+  <a href="data-processing-agreement-freelancers">DPA</a> should already specify their
+  own breach-notification obligation back to you.</p>
+
+  <div class="cta">
+    <h3>Don't want to draft an incident log and notification letters mid-crisis?</h3>
+    <p>NormaKit is a bilingual (EN/IT) GDPR document pack that includes a ready-to-use
+    breach-notification checklist with a decision tree, an internal incident log
+    template, and pre-written notification letter templates (to the Garante and to
+    affected individuals) — plus a Privacy Policy, Cookie Policy, consent clauses, a
+    full Art. 28 DPA, and a ROPA template. €29 one-time, instant download, editable
+    .docx and .pdf.</p>
+    <a class="buy-btn" href="../">See what's included &rarr;</a>
+  </div>
+
+  <p class="disclaimer"><b>Not legal advice.</b> This guide is general information,
+  not a substitute for advice from a qualified lawyer or data protection professional
+  about your specific incident — especially while it's active, when you should also
+  consider consulting a lawyer and, for significant incidents, a cybersecurity
+  professional. NormaKit's templates are likewise informational starting points, not
+  legal advice, and should be reviewed and adapted before use.</p>
+
+  <footer><a href="../">&larr; Back to NormaKit</a> · © 2026 NormaKit</footer>
+</div>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "082e73ff60604f31b0df22bc423c4206"}'></script>
+</body>
+</html>
