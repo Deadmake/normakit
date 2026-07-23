@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://deadmake.github.io/normakit/sitemap.xml
+Sitemap: https://normakit.pages.dev/sitemap.xml

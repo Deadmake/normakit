@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://deadmake.github.io/normakit/</loc>
+    <loc>https://normakit.pages.dev/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://deadmake.github.io/normakit/blog/gdpr-privacy-policy-checklist-freelancers.html</loc>
+    <loc>https://normakit.pages.dev/blog/gdpr-privacy-policy-checklist-freelancers.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
