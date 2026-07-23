@@ -1,0 +1,15 @@
+{
+  "name": "normakit-tools",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Build tooling for NormaKit deliverables (markdown source -> docx/pdf bundle).",
+  "scripts": {
+    "build": "node scripts/convert.js"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "docx": "^9.1.1",
+    "marked": "^14.1.3",
+    "pdfkit": "^0.15.1"
+  }
+}
