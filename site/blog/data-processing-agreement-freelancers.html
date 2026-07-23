@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do You Need a Data Processing Agreement (DPA)? A Guide for Freelancers — NormaKit</title>
+<meta name="description" content="If you handle a client's customer data as a freelancer or agency — developer, marketer, VA — GDPR Art. 28 requires a written Data Processing Agreement. What it must contain, when you need one, and the mistakes that make DPAs unenforceable.">
+<link rel="canonical" href="https://normakit.pages.dev/blog/data-processing-agreement-freelancers.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Do You Need a Data Processing Agreement (DPA)? A Guide for Freelancers">
+<meta property="og:description" content="GDPR Art. 28 requires a written DPA whenever you process personal data on a client's behalf. What it must contain, when it applies, and common mistakes.">
+<meta property="og:url" content="https://normakit.pages.dev/blog/data-processing-agreement-freelancers.html">
+<meta name="twitter:card" content="summary">
+<style>
+  :root {
+    --ink: #1a1d24; --ink-soft: #545b68; --bg: #fbfbfa; --card: #ffffff;
+    --line: #e4e4e0; --accent: #1f5c4c; --accent-ink: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.6; }
+  .wrap { max-width: 700px; margin: 0 auto; padding: 0 24px 64px; }
+  nav.top { padding: 24px 0; }
+  nav.top a { color: var(--accent); text-decoration: none; font-weight: 600; font-size: 14px; }
+  .brand { font-weight: 700; font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
+  h1 { font-size: clamp(26px, 4vw, 34px); line-height: 1.2; margin: 0 0 10px; }
+  .meta { color: var(--ink-soft); font-size: 13.5px; margin-bottom: 32px; }
+  h2 { font-size: 20px; margin: 36px 0 14px; }
+  h3 { font-size: 16px; margin: 22px 0 8px; }
+  p, li { font-size: 15.5px; }
+  ul, ol { padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  .checklist { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+  .checklist li { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px 10px 36px; position: relative; font-size: 14.5px; }
+  .checklist li::before { content: "☐"; position: absolute; left: 12px; top: 9px; color: var(--accent); font-size: 15px; }
+  .callout { background: #fdf6e8; border: 1px solid #e8d8ab; border-radius: 10px; padding: 16px 18px; font-size: 14.5px; color: #6b5a1f; margin: 20px 0; }
+  .cta { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px; margin: 40px 0; }
+  .cta h3 { margin-top: 0; font-size: 18px; }
+  a.buy-btn { display: inline-block; text-decoration: none; background: var(--accent); color: var(--accent-ink); font-weight: 600; font-size: 15px; padding: 12px 20px; border-radius: 10px; margin-top: 8px; }
+  .disclaimer { font-size: 12.5px; color: var(--ink-soft); margin-top: 40px; border-top: 1px solid var(--line); padding-top: 16px; }
+  footer { font-size: 12.5px; color: var(--ink-soft); margin-top: 24px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="top"><a href="../index.html">&larr; NormaKit</a></nav>
+  <div class="brand">NormaKit Guide</div>
+  <h1>Do You Need a Data Processing Agreement (DPA)? A Guide for Freelancers</h1>
+  <p class="meta">Practical guide · GDPR Art. 28 · for developers, marketers, VAs, and agencies who handle a client's data</p>
+
+  <p>If you're a freelance developer, marketer, virtual assistant, or agency and you
+  ever touch a client's customer data — their email list, their site's database,
+  their support inbox — you're not just a freelancer to GDPR. You're a
+  <b>processor</b>, and Article 28 requires a written contract between you and your
+  client before that processing starts. Most freelancers skip this because it feels
+  like paperwork for big companies. It isn't — the obligation applies at any scale,
+  and it's one of the more commonly overlooked compliance gaps in freelance work.</p>
+
+  <h2>Are you actually a "processor"? A quick test</h2>
+  <p>You're a processor (not just a controller of your own business data) whenever
+  you handle personal data <i>on someone else's behalf</i>, under their instructions,
+  for their purposes — not yours. Common freelancer/agency situations:</p>
+  <ul class="checklist">
+    <li>You're a developer with database or admin access to a client's site, where
+    customer records live.</li>
+    <li>You're a marketer running email campaigns through a client's mailing list.</li>
+    <li>You're a VA handling a client's customer support inbox or CRM.</li>
+    <li>You're a bookkeeper or accountant with access to a client's customer/invoice
+    records.</li>
+    <li>You host, back up, or migrate data for a client as part of a technical
+    engagement.</li>
+  </ul>
+  <p>If none of that applies — you only ever see your <i>own</i> client's contact
+  details, for your own invoicing — you're a controller of your own data, not a
+  processor of theirs, and a DPA isn't triggered by that relationship (though you
+  still need your own privacy policy — see our
+  <a href="gdpr-privacy-policy-checklist-freelancers.html">privacy policy checklist</a>).</p>
+
+  <h2>What Article 28(3) requires the DPA to actually contain</h2>
+  <p>A one-line "we comply with GDPR" clause in your services contract is not a
+  valid DPA. Art. 28(3) lists mandatory content — a compliant DPA must set out, in
+  writing:</p>
+  <ul class="checklist">
+    <li><b>Subject matter and duration</b> of the processing.</li>
+    <li><b>Nature and purpose</b> of the processing — what you're actually doing
+    with the data.</li>
+    <li><b>Categories of data subjects and personal data</b> involved (customers,
+    employees, etc.; names, emails, payment info, etc.).</li>
+    <li><b>The Controller's rights and obligations</b>, and confirmation you process
+    only on their documented instructions.</li>
+    <li><b>A confidentiality commitment</b> from anyone on your side who touches the
+    data.</li>
+    <li><b>Security measures</b> under Art. 32 (encryption, access controls, backups
+    — whatever's actually appropriate to the processing).</li>
+    <li><b>Sub-processor rules</b> — you need the client's prior authorisation
+    (general or specific) before using any sub-processor (e.g. your own hosting
+    provider), and you stay liable for their performance.</li>
+    <li><b>Assistance obligations</b> — helping the client respond to data subject
+    rights requests and meet their own breach-notification duties.</li>
+    <li><b>A breach-notification duty</b> from you to the client, without undue
+    delay.</li>
+    <li><b>End-of-contract data handling</b> — delete or return all data when the
+    engagement ends, unless law requires you to keep it.</li>
+    <li><b>Audit rights</b> — the client (or their auditor) can verify your
+    compliance.</li>
+  </ul>
+
+  <div class="callout">
+    <b>The most common mistake:</b> treating the DPA as covered by a generic
+    "confidentiality" clause in the main services contract. Confidentiality is only
+    one of eleven required elements — a contract without sub-processor terms,
+    breach-notification timelines, and audit rights is not Art. 28-compliant no
+    matter how strong its confidentiality language is.
+  </div>
+
+  <h2>Who signs it, and in which direction?</h2>
+  <p>The same template works both ways — only the labels change:</p>
+  <ul>
+    <li>If <b>you hire a supplier</b> who processes data for you (an email platform,
+    a hosting provider, another freelancer with database access), <b>you're the
+    Controller</b> and they sign as Processor.</li>
+    <li>If <b>a client hires you</b> and you touch their customer data, <b>you're
+    the Processor</b> and they sign as Controller.</li>
+  </ul>
+  <p>Many freelancers need both directions at once: Processor to their clients,
+  Controller to their own sub-processors (their hosting company, their email
+  tool) — each relationship needs its own signed DPA.</p>
+
+  <h2>Quick self-audit</h2>
+  <ol>
+    <li>List every client whose customer/personal data you can currently access.</li>
+    <li>For each one, is there a signed, written DPA — not just a mention in the
+    main contract?</li>
+    <li>Does it name your own sub-processors (hosting, email, etc.) and how you
+    got authorisation to use them?</li>
+    <li>Does it state a breach-notification timeframe you'd actually meet?</li>
+    <li>Do you know what "delete or return" means in practice for each client's
+    data once an engagement ends?</li>
+  </ol>
+  <p>If you answered "no" or "not sure" for any client with real data access, that's
+  a gap worth closing before it becomes a client's audit question or a regulator's.</p>
+
+  <div class="cta">
+    <h3>Don't want to draft this from a blank page?</h3>
+    <p>NormaKit includes a full bilingual (EN/IT) Art. 28 DPA template — both
+    directions covered by swapping the Controller/Processor labels — alongside a
+    Privacy Policy, Cookie Policy, consent clauses, a mini ROPA template, and a
+    breach-notification checklist. €29 one-time, instant download, editable .docx
+    and .pdf.</p>
+    <a class="buy-btn" href="../index.html">See what's included &rarr;</a>
+  </div>
+
+  <p class="disclaimer"><b>Not legal advice.</b> This guide is general information,
+  not a substitute for advice from a qualified lawyer or data protection professional
+  about your specific situation. NormaKit's templates are likewise informational
+  starting points, not legal advice, and should be reviewed and adapted before use.</p>
+
+  <footer><a href="../index.html">&larr; Back to NormaKit</a> · © 2026 NormaKit</footer>
+</div>
+</body>
+</html>
