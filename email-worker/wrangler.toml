@@ -1,0 +1,7 @@
+name = "normakit-email"
+main = "src/index.js"
+compatibility_date = "2026-07-24"
+
+[[r2_buckets]]
+binding = "INBOX"
+bucket_name = "normakit-inbox"
