@@ -1,10 +1,10 @@
-# NormaKit — Privacy Policy Template (EN)
+# NormaKit: Privacy Policy Template (EN)
 
 > **How to use this template:** Replace every `[bracketed placeholder]`. Delete
 > any clause/section that doesn't apply to your business (e.g. remove the
 > "Analytics" row if you don't use analytics). This document is designed for a
 > website, web app, or online store operated by a freelancer or micro-business.
-> It is a template, not legal advice — see the disclaimer at the end.
+> It is a template, not legal advice, see the disclaimer at the end.
 
 ---
 
@@ -20,10 +20,10 @@
 [Partita IVA / VAT number, if applicable]
 [Contact email for privacy matters, e.g. privacy@yourdomain.com]
 
-We are the "data controller" of the personal data described in this policy —
+We are the "data controller" of the personal data described in this policy,
 meaning we decide why and how it is processed.
 
-**Data Protection Officer (DPO):** [Not appointed — most freelancers/SMEs are
+**Data Protection Officer (DPO):** [Not appointed, most freelancers/SMEs are
 not legally required to appoint one, unless core activities involve large-
 scale/systematic monitoring or large-scale special-category data. Delete this
 line if you appoint one and add their contact details instead.]
@@ -34,7 +34,7 @@ line if you appoint one and add their contact details instead.]
 |---|---|---|---|
 | Contact data | Name, email, phone | Respond to enquiries, provide services | Contract (Art. 6(1)(b)) / Legitimate interest (Art. 6(1)(f)) |
 | Account data | Username, password (hashed), purchase history | Create and manage your account | Contract (Art. 6(1)(b)) |
-| Billing data | Billing address, VAT number, payment confirmation (not full card numbers — handled by our payment processor) | Process payment, issue invoices, comply with tax law | Contract (Art. 6(1)(b)) / Legal obligation (Art. 6(1)(c)) |
+| Billing data | Billing address, VAT number, payment confirmation (not full card numbers, handled by our payment processor) | Process payment, issue invoices, comply with tax law | Contract (Art. 6(1)(b)) / Legal obligation (Art. 6(1)(c)) |
 | Technical data | IP address, browser type, device type, pages visited | Operate and secure the site | Legitimate interest (Art. 6(1)(f)) |
 | Marketing data | Email address (only if you opted in) | Send newsletters/offers | Consent (Art. 6(1)(a)) |
 | [Add/remove rows as needed] | | | |
@@ -50,16 +50,16 @@ and automatically via cookies/analytics when you browse our site (see our
 
 ### 4. Who we share it with
 
-- **Payment processors** (e.g. [Stripe / your payment provider]) — to process
+- **Payment processors** (e.g. [Stripe / your payment provider]), to process
   payments. They act as an independent controller for the payment data they
   process.
-- **Hosting/IT providers** (e.g. [your hosting provider]) — to store data
+- **Hosting/IT providers** (e.g. [your hosting provider]), to store data
   securely, acting as our processor under a data processing agreement.
-- **Email/marketing tools** (e.g. [your email provider]) — only for
+- **Email/marketing tools** (e.g. [your email provider]), only for
   subscribers who opted in, acting as our processor.
-- **Professional advisors** (accountant, lawyer) — where necessary, under
+- **Professional advisors** (accountant, lawyer), where necessary, under
   confidentiality obligations.
-- **Authorities** — only where required by law (e.g. tax authorities, law
+- **Authorities**: only where required by law (e.g. tax authorities, law
   enforcement with a valid legal basis).
 
 We do not sell your personal data to third parties.
@@ -81,7 +81,7 @@ safeguard by contacting us at [email]."]
 | Data category | Retention period |
 |---|---|
 | Account data | For as long as your account is active, plus [X] after closure |
-| Billing/invoice data | [10 years — Italian tax law retention requirement, Art. 2220 Codice Civile / Art. 22 DPR 600/1973; adjust to your jurisdiction] |
+| Billing/invoice data | [10 years, Italian tax law retention requirement, Art. 2220 Codice Civile / Art. 22 DPR 600/1973; adjust to your jurisdiction] |
 | Marketing/newsletter data | Until you unsubscribe, or [X months] of inactivity |
 | Technical/log data | [12 months], then anonymised or deleted |
 
@@ -94,13 +94,13 @@ Under the GDPR, you have the right to:
 - **Erase** your data ("right to be forgotten"), subject to legal retention
   duties like invoices (Art. 17)
 - **Restrict** processing in certain circumstances (Art. 18)
-- **Data portability** — receive your data in a structured, machine-readable
+- **Data portability**: receive your data in a structured, machine-readable
   format (Art. 20)
 - **Object** to processing based on legitimate interest or for direct
   marketing (Art. 21)
 - **Withdraw consent** at any time, where processing is based on consent,
   without affecting the lawfulness of processing before withdrawal (Art. 7(3))
-- **Lodge a complaint** with a supervisory authority — in Italy, the
+- **Lodge a complaint** with a supervisory authority, in Italy, the
   **Garante per la protezione dei dati personali** ([www.garanteprivacy.it](https://www.garanteprivacy.it)),
   or the data protection authority of your own EU country of residence.
 
@@ -112,7 +112,7 @@ requests, per Art. 12(3)).
 
 We apply appropriate technical and organisational measures (Art. 32) to
 protect your data, including [encryption in transit (HTTPS), access controls,
-regular backups — adjust to what you actually do].
+regular backups, adjust to what you actually do].
 
 ### 9. Automated decision-making
 
@@ -142,14 +142,14 @@ operator accept no liability for outcomes arising from use of this template.
 ---
 ---
 
-# NormaKit — Modello di Informativa Privacy (IT)
+# NormaKit: Modello di Informativa Privacy (IT)
 
 > **Come usare questo modello:** sostituisci ogni `[segnaposto tra parentesi]`.
 > Elimina qualsiasi clausola/sezione non pertinente alla tua attività (es.
 > rimuovi la riga "Analytics" se non utilizzi strumenti di analisi). Questo
 > documento è pensato per un sito web, una web app o un negozio online gestito
 > da un libero professionista o da una micro-impresa. È un modello, non una
-> consulenza legale — vedi il disclaimer in fondo.
+> consulenza legale, vedi il disclaimer in fondo.
 
 ---
 
@@ -166,9 +166,9 @@ operator accept no liability for outcomes arising from use of this template.
 [Email di contatto per questioni privacy, es. privacy@tuodominio.com]
 
 Siamo il "titolare del trattamento" dei dati personali descritti in questa
-informativa — cioè decidiamo perché e come vengono trattati.
+informativa, cioè decidiamo perché e come vengono trattati.
 
-**Responsabile della Protezione dei Dati (DPO):** [Non nominato — la maggior
+**Responsabile della Protezione dei Dati (DPO):** [Non nominato, la maggior
 parte dei liberi professionisti/PMI non è legalmente tenuta a nominarne uno,
 salvo che le attività principali comportino monitoraggio sistematico su larga
 scala o trattamento su larga scala di categorie particolari di dati. Elimina
@@ -180,7 +180,7 @@ questa riga se ne nomini uno e aggiungi i suoi contatti.]
 |---|---|---|---|
 | Dati di contatto | Nome, email, telefono | Rispondere a richieste, fornire servizi | Contratto (Art. 6(1)(b)) / Legittimo interesse (Art. 6(1)(f)) |
 | Dati account | Username, password (con hash), storico acquisti | Creare e gestire il tuo account | Contratto (Art. 6(1)(b)) |
-| Dati di fatturazione | Indirizzo di fatturazione, P.IVA, conferma pagamento (non i numeri completi della carta — gestiti dal processore di pagamento) | Elaborare il pagamento, emettere fatture, adempiere obblighi fiscali | Contratto (Art. 6(1)(b)) / Obbligo legale (Art. 6(1)(c)) |
+| Dati di fatturazione | Indirizzo di fatturazione, P.IVA, conferma pagamento (non i numeri completi della carta, gestiti dal processore di pagamento) | Elaborare il pagamento, emettere fatture, adempiere obblighi fiscali | Contratto (Art. 6(1)(b)) / Obbligo legale (Art. 6(1)(c)) |
 | Dati tecnici | Indirizzo IP, tipo di browser, tipo di dispositivo, pagine visitate | Gestire e proteggere il sito | Legittimo interesse (Art. 6(1)(f)) |
 | Dati di marketing | Indirizzo email (solo se hai dato consenso) | Inviare newsletter/offerte | Consenso (Art. 6(1)(a)) |
 | [Aggiungi/rimuovi righe secondo necessità] | | | |
@@ -196,17 +196,17 @@ automaticamente tramite cookie/strumenti di analisi durante la navigazione
 
 ### 4. Con chi li condividiamo
 
-- **Processori di pagamento** (es. [Stripe / il tuo fornitore di pagamenti]) —
+- **Processori di pagamento** (es. [Stripe / il tuo fornitore di pagamenti]),
   per elaborare i pagamenti. Agiscono come titolari autonomi per i dati di
   pagamento che trattano.
-- **Fornitori di hosting/IT** (es. [il tuo fornitore di hosting]) — per
+- **Fornitori di hosting/IT** (es. [il tuo fornitore di hosting]), per
   archiviare i dati in modo sicuro, agendo come nostro responsabile del
   trattamento in base a un accordo (DPA).
-- **Strumenti di email/marketing** (es. [il tuo fornitore email]) — solo per
+- **Strumenti di email/marketing** (es. [il tuo fornitore email]), solo per
   gli iscritti che hanno dato consenso, agendo come nostro responsabile.
-- **Consulenti professionali** (commercialista, avvocato) — ove necessario,
+- **Consulenti professionali** (commercialista, avvocato), ove necessario,
   soggetti a obblighi di riservatezza.
-- **Autorità** — solo se richiesto dalla legge (es. autorità fiscali, forze
+- **Autorità**: solo se richiesto dalla legge (es. autorità fiscali, forze
   dell'ordine con base giuridica valida).
 
 Non vendiamo i tuoi dati personali a terzi.
@@ -228,7 +228,7 @@ equivalente. Puoi richiedere una copia della relativa garanzia scrivendo a
 | Categoria di dati | Periodo di conservazione |
 |---|---|
 | Dati account | Per la durata dell'account attivo, più [X] dopo la chiusura |
-| Dati di fatturazione | [10 anni — obbligo di conservazione fiscale italiano, Art. 2220 Codice Civile / Art. 22 DPR 600/1973; adatta alla tua giurisdizione] |
+| Dati di fatturazione | [10 anni, obbligo di conservazione fiscale italiano, Art. 2220 Codice Civile / Art. 22 DPR 600/1973; adatta alla tua giurisdizione] |
 | Dati marketing/newsletter | Fino alla disiscrizione, o [X mesi] di inattività |
 | Dati tecnici/log | [12 mesi], poi anonimizzati o cancellati |
 
@@ -241,14 +241,14 @@ Ai sensi del GDPR, hai diritto a:
 - **Cancellare** i tuoi dati ("diritto all'oblio"), fatti salvi obblighi di
   conservazione legale come le fatture (Art. 17)
 - **Limitare** il trattamento in determinate circostanze (Art. 18)
-- **Portabilità dei dati** — ricevere i tuoi dati in formato strutturato e
+- **Portabilità dei dati**: ricevere i tuoi dati in formato strutturato e
   leggibile da dispositivo automatico (Art. 20)
 - **Opporti** al trattamento basato su legittimo interesse o per marketing
   diretto (Art. 21)
 - **Revocare il consenso** in qualsiasi momento, quando il trattamento si basa
   sul consenso, senza pregiudicare la liceità del trattamento precedente alla
   revoca (Art. 7(3))
-- **Presentare un reclamo** a un'autorità di controllo — in Italia, il
+- **Presentare un reclamo** a un'autorità di controllo, in Italia, il
   **Garante per la protezione dei dati personali**
   ([www.garanteprivacy.it](https://www.garanteprivacy.it)), o l'autorità di
   protezione dati del tuo paese UE di residenza.
@@ -261,7 +261,7 @@ ai sensi dell'Art. 12(3)).
 
 Adottiamo misure tecniche e organizzative adeguate (Art. 32) per proteggere i
 tuoi dati, tra cui [cifratura in transito (HTTPS), controlli di accesso,
-backup regolari — adatta a quanto effettivamente fai].
+backup regolari, adatta a quanto effettivamente fai].
 
 ### 9. Processi decisionali automatizzati
 

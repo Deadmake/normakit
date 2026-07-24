@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Free GDPR Privacy Policy Generator for Freelancers (EN/IT) — NormaKit</title>
+<title>Free GDPR Privacy Policy Generator for Freelancers (EN/IT, NormaKit)</title>
 <meta name="description" content="Free instant GDPR privacy policy generator for freelancers and micro-businesses. Fill in your details, get a ready-to-use policy in English or Italian, referencing the Garante. No signup, no account.">
 <link rel="canonical" href="https://normakit.pages.dev/tools/privacy-policy-generator">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Free GDPR Privacy Policy Generator (EN/IT) — NormaKit">
+<meta property="og:title" content="Free GDPR Privacy Policy Generator (EN/IT), NormaKit">
 <meta property="og:description" content="Fill in your details, get a ready-to-use GDPR privacy policy in English or Italian. Free, instant, no signup.">
 <meta property="og:url" content="https://normakit.pages.dev/tools/privacy-policy-generator">
 <meta name="twitter:card" content="summary">
@@ -80,7 +80,7 @@
   <div class="brand">Free tool</div>
   <h1>GDPR Privacy Policy Generator</h1>
   <p class="sub">Fill in your details on the left, get a ready-to-use GDPR privacy policy on
-  the right — updates live, no signup, nothing sent to a server. Available in English or Italian.</p>
+  the right, updates live, no signup, nothing sent to a server. Available in English or Italian.</p>
   <div class="badges">
     <span class="badge">100% free</span>
     <span class="badge">No signup</span>
@@ -144,20 +144,20 @@
   </div>
 
   <div class="callout">
-    <b>How this works:</b> everything happens in your browser — nothing you type is
+    <b>How this works:</b> everything happens in your browser, nothing you type is
     sent anywhere or stored. This generates one document (a privacy policy) in one
     language at a time, as plain text you can paste into your site. It's a template,
-    not legal advice — review it (or have a professional review it) before publishing.
+    not legal advice, review it (or have a professional review it) before publishing.
   </div>
 
   <div class="cta">
     <h3>Need more than a privacy policy?</h3>
-    <p>NormaKit's full pack has all 7 documents — privacy policy, cookie policy,
+    <p>NormaKit's full pack has all 7 documents, privacy policy, cookie policy,
     consent clauses, a full Art. 28 DPA, a mini ROPA template, a breach-notification
-    checklist, and a plain-language guide — in <b>both</b> English and Italian together,
+    checklist, and a plain-language guide, in <b>both</b> English and Italian together,
     delivered as editable .docx and .pdf (not plain text), cross-referencing each other
     correctly. €29 one-time.</p>
-    <a class="buy-btn" href="../#buy">See the full pack — €29 &rarr;</a>
+    <a class="buy-btn" href="../#buy">See the full pack, €29 &rarr;</a>
   </div>
 
   <p class="disclaimer"><b>Not legal advice.</b> This tool generates a template for
@@ -234,8 +234,8 @@
     var dpoText = dpoYes.checked
       ? val('f-dpo-details', lang === 'en' ? '[DPO name and contact]' : '[nome e contatto del DPO]')
       : (lang === 'en'
-          ? 'Not appointed — most freelancers/SMEs are not legally required to appoint one, unless core activities involve large-scale/systematic monitoring or large-scale special-category data.'
-          : 'Non nominato — la maggior parte dei liberi professionisti/PMI non è legalmente tenuta a nominarne uno, salvo che le attività principali comportino monitoraggio sistematico su larga scala o trattamento su larga scala di categorie particolari di dati.');
+          ? 'Not appointed, most freelancers/SMEs are not legally required to appoint one, unless core activities involve large-scale/systematic monitoring or large-scale special-category data.'
+          : 'Non nominato, la maggior parte dei liberi professionisti/PMI non è legalmente tenuta a nominarne uno, salvo che le attività principali comportino monitoraggio sistematico su larga scala o trattamento su larga scala di categorie particolari di dati.');
 
     var rows = [];
     Object.keys(CATEGORIES).forEach(function (key) {
@@ -257,7 +257,7 @@
 
   function tableRows(rows, sep) {
     return rows.map(function (r) {
-      return '- ' + r.label + ' (' + r.examples + ') — ' + r.purpose + '. Legal basis: ' + r.basis + '.';
+      return '- ' + r.label + ' (' + r.examples + '), ' + r.purpose + '. Legal basis: ' + r.basis + '.';
     }).join('\n');
   }
 
@@ -273,12 +273,12 @@
     if (vat) lines.push('VAT / Partita IVA: ' + vat);
     lines.push('Contact: ' + email);
     lines.push('');
-    lines.push('We are the "data controller" of the personal data described in this policy — meaning we decide why and how it is processed.');
+    lines.push('We are the "data controller" of the personal data described in this policy, meaning we decide why and how it is processed.');
     lines.push('');
     lines.push('Data Protection Officer (DPO): ' + dpoText);
     lines.push('');
     lines.push('2. What data we collect and why');
-    lines.push(rows.length ? tableRows(rows) : '(No data categories selected yet — check at least one on the left.)');
+    lines.push(rows.length ? tableRows(rows) : '(No data categories selected yet, check at least one on the left.)');
     lines.push('');
     lines.push('We do not collect special categories of data (health, religion, political opinions, etc.) unless explicitly stated elsewhere on our site.');
     lines.push('');
@@ -286,11 +286,11 @@
     lines.push('Directly from you (forms you fill in, purchases you make, emails you send us), and automatically via cookies/analytics when you browse our site.');
     lines.push('');
     lines.push('4. Who we share it with');
-    lines.push('- Payment processors — to process payments, acting as an independent controller for the payment data they process.');
-    lines.push('- Hosting/IT providers — to store data securely, acting as our processor under a data processing agreement.');
-    lines.push('- Email/marketing tools — only for subscribers who opted in, acting as our processor.');
-    lines.push('- Professional advisors (accountant, lawyer) — where necessary, under confidentiality obligations.');
-    lines.push('- Authorities — only where required by law.');
+    lines.push('- Payment processors, to process payments, acting as an independent controller for the payment data they process.');
+    lines.push('- Hosting/IT providers, to store data securely, acting as our processor under a data processing agreement.');
+    lines.push('- Email/marketing tools, only for subscribers who opted in, acting as our processor.');
+    lines.push('- Professional advisors (accountant, lawyer), where necessary, under confidentiality obligations.');
+    lines.push('- Authorities, only where required by law.');
     lines.push('We do not sell your personal data to third parties.');
     lines.push('');
     lines.push('5. International transfers');
@@ -298,12 +298,12 @@
     lines.push('');
     lines.push('6. How long we keep your data');
     lines.push('- Account data: for as long as your account is active, plus a reasonable period after closure.');
-    lines.push('- Billing/invoice data: 10 years (Italian tax law retention requirement, Art. 2220 Codice Civile / Art. 22 DPR 600/1973 — adjust to your jurisdiction).');
+    lines.push('- Billing/invoice data: 10 years (Italian tax law retention requirement, Art. 2220 Codice Civile / Art. 22 DPR 600/1973, adjust to your jurisdiction).');
     lines.push('- Marketing/newsletter data: until you unsubscribe, or after a period of inactivity.');
     lines.push('- Technical/log data: 12 months, then anonymised or deleted.');
     lines.push('');
     lines.push('7. Your rights');
-    lines.push('Under the GDPR, you have the right to access (Art. 15), rectify (Art. 16), erase (Art. 17), restrict (Art. 18), port your data (Art. 20), object to processing (Art. 21), withdraw consent at any time (Art. 7(3)), and lodge a complaint with a supervisory authority — in Italy, the Garante per la protezione dei dati personali (www.garanteprivacy.it), or the data protection authority of your own EU country of residence.');
+    lines.push('Under the GDPR, you have the right to access (Art. 15), rectify (Art. 16), erase (Art. 17), restrict (Art. 18), port your data (Art. 20), object to processing (Art. 21), withdraw consent at any time (Art. 7(3)), and lodge a complaint with a supervisory authority, in Italy, the Garante per la protezione dei dati personali (www.garanteprivacy.it), or the data protection authority of your own EU country of residence.');
     lines.push('To exercise any of these rights, contact us at ' + email + '. We will respond within one month (extendable by two further months for complex requests, per Art. 12(3)).');
     lines.push('');
     lines.push('8. Security');
@@ -337,12 +337,12 @@
     if (vat) lines.push('Partita IVA: ' + vat);
     lines.push('Contatto: ' + email);
     lines.push('');
-    lines.push('Siamo il "titolare del trattamento" dei dati personali descritti in questa informativa — cioè decidiamo perché e come vengono trattati.');
+    lines.push('Siamo il "titolare del trattamento" dei dati personali descritti in questa informativa, cioè decidiamo perché e come vengono trattati.');
     lines.push('');
     lines.push('Responsabile della Protezione dei Dati (DPO): ' + dpoText);
     lines.push('');
     lines.push('2. Quali dati raccogliamo e perché');
-    lines.push(rows.length ? tableRows(rows) : '(Nessuna categoria di dati selezionata — spuntane almeno una a sinistra.)');
+    lines.push(rows.length ? tableRows(rows) : '(Nessuna categoria di dati selezionata, spuntane almeno una a sinistra.)');
     lines.push('');
     lines.push('Non raccogliamo categorie particolari di dati (salute, opinioni religiose o politiche, ecc.) salvo diversa indicazione esplicita sul sito.');
     lines.push('');
@@ -350,11 +350,11 @@
     lines.push('Direttamente da te (moduli compilati, acquisti effettuati, email inviateci) e automaticamente tramite cookie/strumenti di analisi durante la navigazione.');
     lines.push('');
     lines.push('4. Con chi li condividiamo');
-    lines.push('- Processori di pagamento — per elaborare i pagamenti, agendo come titolari autonomi per i dati di pagamento che trattano.');
-    lines.push('- Fornitori di hosting/IT — per archiviare i dati in modo sicuro, agendo come nostro responsabile del trattamento.');
-    lines.push('- Strumenti di email/marketing — solo per gli iscritti che hanno dato consenso, agendo come nostro responsabile.');
-    lines.push('- Consulenti professionali (commercialista, avvocato) — ove necessario, soggetti a obblighi di riservatezza.');
-    lines.push('- Autorità — solo se richiesto dalla legge.');
+    lines.push('- Processori di pagamento, per elaborare i pagamenti, agendo come titolari autonomi per i dati di pagamento che trattano.');
+    lines.push('- Fornitori di hosting/IT, per archiviare i dati in modo sicuro, agendo come nostro responsabile del trattamento.');
+    lines.push('- Strumenti di email/marketing, solo per gli iscritti che hanno dato consenso, agendo come nostro responsabile.');
+    lines.push('- Consulenti professionali (commercialista, avvocato), ove necessario, soggetti a obblighi di riservatezza.');
+    lines.push('- Autorità, solo se richiesto dalla legge.');
     lines.push('Non vendiamo i tuoi dati personali a terzi.');
     lines.push('');
     lines.push('5. Trasferimenti internazionali');
@@ -362,12 +362,12 @@
     lines.push('');
     lines.push('6. Per quanto tempo conserviamo i tuoi dati');
     lines.push('- Dati account: per la durata dell\'account attivo, più un periodo ragionevole dopo la chiusura.');
-    lines.push('- Dati di fatturazione: 10 anni (obbligo di conservazione fiscale italiano, Art. 2220 Codice Civile / Art. 22 DPR 600/1973 — adatta alla tua giurisdizione).');
+    lines.push('- Dati di fatturazione: 10 anni (obbligo di conservazione fiscale italiano, Art. 2220 Codice Civile / Art. 22 DPR 600/1973, adatta alla tua giurisdizione).');
     lines.push('- Dati marketing/newsletter: fino alla disiscrizione, o dopo un periodo di inattività.');
     lines.push('- Dati tecnici/log: 12 mesi, poi anonimizzati o cancellati.');
     lines.push('');
     lines.push('7. I tuoi diritti');
-    lines.push('Ai sensi del GDPR, hai diritto ad accedere (Art. 15), rettificare (Art. 16), cancellare (Art. 17), limitare (Art. 18), ricevere in formato portabile i tuoi dati (Art. 20), opporti al trattamento (Art. 21), revocare il consenso in qualsiasi momento (Art. 7(3)), e presentare un reclamo a un\'autorità di controllo — in Italia, il Garante per la protezione dei dati personali (www.garanteprivacy.it), o l\'autorità di protezione dati del tuo paese UE di residenza.');
+    lines.push('Ai sensi del GDPR, hai diritto ad accedere (Art. 15), rettificare (Art. 16), cancellare (Art. 17), limitare (Art. 18), ricevere in formato portabile i tuoi dati (Art. 20), opporti al trattamento (Art. 21), revocare il consenso in qualsiasi momento (Art. 7(3)), e presentare un reclamo a un\'autorità di controllo, in Italia, il Garante per la protezione dei dati personali (www.garanteprivacy.it), o l\'autorità di protezione dati del tuo paese UE di residenza.');
     lines.push('Per esercitare uno di questi diritti, contattaci a ' + email + '. Risponderemo entro un mese (prorogabile di due mesi per richieste complesse, ai sensi dell\'Art. 12(3)).');
     lines.push('');
     lines.push('8. Sicurezza');

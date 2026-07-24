@@ -1,10 +1,10 @@
-# NormaKit — Data Processing Agreement (DPA) Template (EN)
+# NormaKit: Data Processing Agreement (DPA) Template (EN)
 
 > **How to use this template:** Use this when YOU (as controller) hire a
 > supplier who processes personal data on your behalf (e.g. an email
 > platform, a hosting provider, a freelance developer with database access),
 > OR when you provide services to a client and THEY need you to sign a DPA as
-> their processor — just swap the "Controller"/"Processor" labels to match
+> their processor, just swap the "Controller"/"Processor" labels to match
 > your role. This follows the mandatory content list in GDPR Art. 28(3).
 
 ---
@@ -41,12 +41,12 @@ including storage, backup, and technical support."]
 ### 3. Categories of data subjects
 
 [e.g. Controller's customers, website visitors, newsletter subscribers,
-employees — list what applies]
+employees, list what applies]
 
 ### 4. Categories of personal data
 
-[e.g. name, email address, IP address, purchase history, billing address —
-list what applies. Flag if any special category data (Art. 9) is involved —
+[e.g. name, email address, IP address, purchase history, billing address,
+list what applies. Flag if any special category data (Art. 9) is involved,
 this needs extra safeguards and is uncommon for most small businesses.]
 
 ### 5. Processor's obligations (Art. 28(3))
@@ -65,7 +65,7 @@ confidentiality;
 (c) implement appropriate **technical and organisational security measures**
 under Art. 32, including as a minimum: [encryption in transit and at rest
 where applicable, access controls/least privilege, regular backups, ability
-to restore availability after an incident — adjust to what the Processor
+to restore availability after an incident, adjust to what the Processor
 actually implements];
 
 (d) respect the conditions in paragraphs 2 and 4 of Art. 28 for engaging
@@ -77,7 +77,7 @@ for the fulfilment of the Controller's obligation to respond to **data
 subject rights requests** (Chapter III GDPR);
 
 (f) assist the Controller in ensuring compliance with the obligations under
-Art. 32–36 (security, **breach notification**, DPIAs, prior consultation),
+Art. 32 to 36 (security, **breach notification**, DPIAs, prior consultation),
 taking into account the nature of processing and information available to the
 Processor;
 
@@ -131,7 +131,7 @@ Processor's business.
 Upon termination or expiry of the Main Agreement, the Processor shall, at the
 Controller's written choice, delete or return all personal data to the
 Controller, and delete existing copies, **unless** EU or Member State law
-requires continued storage (e.g. accounting/tax records) — in which case the
+requires continued storage (e.g. accounting/tax records), in which case the
 Processor may retain only what is legally required, for only as long as
 required, and shall continue to protect it under this DPA's terms.
 
@@ -141,7 +141,7 @@ The Processor shall notify the Controller **without undue delay**, and in any
 case within [24-48 hours] of becoming aware of a personal data breach
 affecting the Controller's data, providing at minimum: nature of the breach,
 categories and approximate number of data subjects/records affected, likely
-consequences, and measures taken or proposed to address it — to allow the
+consequences, and measures taken or proposed to address it, to allow the
 Controller to meet its own 72-hour notification duty to the supervisory
 authority under Art. 33.
 
@@ -187,13 +187,13 @@ operator accept no liability for outcomes arising from use of this template.
 ---
 ---
 
-# NormaKit — Modello di Accordo sul Trattamento dei Dati (DPA) (IT)
+# NormaKit: Modello di Accordo sul Trattamento dei Dati (DPA) (IT)
 
 > **Come usare questo modello:** usalo quando TU (come titolare) incarichi un
 > fornitore che tratta dati personali per tuo conto (es. una piattaforma
 > email, un fornitore di hosting, uno sviluppatore freelance con accesso al
 > database), OPPURE quando fornisci servizi a un cliente e LORO ti richiedono
-> di firmare un DPA come loro responsabile del trattamento — basta invertire
+> di firmare un DPA come loro responsabile del trattamento, basta invertire
 > le etichette "Titolare"/"Responsabile" secondo il tuo ruolo. Segue l'elenco
 > di contenuti obbligatori dell'Art. 28(3) GDPR.
 
@@ -231,13 +231,13 @@ incluso storage, backup e supporto tecnico."]
 ### 3. Categorie di interessati
 
 [es. clienti del Titolare, visitatori del sito, iscritti alla newsletter,
-dipendenti — elenca quanto pertinente]
+dipendenti, elenca quanto pertinente]
 
 ### 4. Categorie di dati personali
 
 [es. nome, indirizzo email, indirizzo IP, storico acquisti, indirizzo di
-fatturazione — elenca quanto pertinente. Segnala se sono coinvolti dati
-appartenenti a categorie particolari (Art. 9) — richiedono garanzie
+fatturazione, elenca quanto pertinente. Segnala se sono coinvolti dati
+appartenenti a categorie particolari (Art. 9), richiedono garanzie
 aggiuntive e sono rari per la maggior parte delle piccole imprese.]
 
 ### 5. Obblighi del Responsabile (Art. 28(3))
@@ -256,7 +256,7 @@ riservatezza;
 (c) adotta misure tecniche e organizzative di sicurezza adeguate ai sensi
 dell'Art. 32, tra cui come minimo: [cifratura in transito e a riposo ove
 applicabile, controlli di accesso/minimo privilegio, backup regolari,
-capacità di ripristinare la disponibilità dopo un incidente — adatta a quanto
+capacità di ripristinare la disponibilità dopo un incidente, adatta a quanto
 effettivamente implementato dal Responsabile];
 
 (d) rispetta le condizioni dei paragrafi 2 e 4 dell'Art. 28 per il ricorso a
@@ -268,7 +268,7 @@ l'adempimento dell'obbligo del Titolare di rispondere alle **richieste di
 esercizio dei diritti degli interessati** (Capo III GDPR);
 
 (f) assiste il Titolare nel garantire il rispetto degli obblighi di cui agli
-Artt. 32–36 (sicurezza, **notifica delle violazioni**, valutazioni d'impatto,
+Artt. 32 to 36 (sicurezza, **notifica delle violazioni**, valutazioni d'impatto,
 consultazione preventiva), tenendo conto della natura del trattamento e delle
 informazioni a disposizione del Responsabile;
 
@@ -324,7 +324,7 @@ Alla cessazione o scadenza dell'Accordo Principale, il Responsabile, a scelta
 scritta del Titolare, cancella o restituisce tutti i dati personali al
 Titolare, e cancella le copie esistenti, **salvo che** il diritto dell'UE o
 degli Stati membri imponga una conservazione continuativa (es. registri
-contabili/fiscali) — nel qual caso il Responsabile può conservare solo quanto
+contabili/fiscali), nel qual caso il Responsabile può conservare solo quanto
 legalmente richiesto, solo per il tempo richiesto, continuando a proteggerlo
 secondo i termini del presente DPA.
 
@@ -335,7 +335,7 @@ comunque entro [24-48 ore] dal momento in cui viene a conoscenza di una
 violazione dei dati personali che riguarda i dati del Titolare, fornendo come
 minimo: natura della violazione, categorie e numero approssimativo di
 interessati/record coinvolti, probabili conseguenze, misure adottate o
-proposte per affrontarla — per consentire al Titolare di rispettare il proprio
+proposte per affrontarla, per consentire al Titolare di rispettare il proprio
 obbligo di notifica all'autorità di controllo entro 72 ore ai sensi dell'Art.
 33.
 

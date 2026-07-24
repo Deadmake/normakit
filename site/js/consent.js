@@ -1,5 +1,5 @@
 /*
- * NormaKit cookie consent — gates Microsoft Advertising UET (ad_storage /
+ * NormaKit cookie consent, gates Microsoft Advertising UET (ad_storage /
  * analytics_storage) behind explicit opt-in. No cookie is set for necessary
  * site function (there is none needed); only this consent choice itself is
  * stored, in localStorage, first-party, nothing sent to a server.

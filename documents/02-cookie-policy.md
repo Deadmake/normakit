@@ -1,7 +1,7 @@
-# NormaKit — Cookie Policy Template + Consent Banner Copy (EN)
+# NormaKit: Cookie Policy Template + Consent Banner Copy (EN)
 
 > **How to use this template:** Replace `[bracketed placeholders]`, in
-> particular the cookie table in section 3 — audit your own site (browser
+> particular the cookie table in section 3, audit your own site (browser
 > dev tools → Application → Cookies, or a free scanner) and list what's
 > actually set. Never list cookies you don't use, and never omit ones you do.
 
@@ -27,15 +27,15 @@ listed.
 
 | Category | Purpose | Consent required? | Example cookies |
 |---|---|---|---|
-| **Necessary** | Required for the site to function (session handling, security, load balancing, remembering your cookie choices) | No — exempt under EU ePrivacy rules (strictly necessary) | `[session_id]`, `[csrf_token]` |
+| **Necessary** | Required for the site to function (session handling, security, load balancing, remembering your cookie choices) | No, exempt under EU ePrivacy rules (strictly necessary) | `[session_id]`, `[csrf_token]` |
 | **Functional** | Remember your preferences (language, currency, login state) | Yes | `[lang_pref]`, `[currency]` |
-| **Analytics** | Understand how visitors use the site (aggregated, to improve it) | Yes | `[_ga, _gid — if using Google Analytics]` / `[Plausible/Fathom — cookie-less alternative, mention if used instead]` |
-| **Marketing** | Track visitors for advertising/retargeting purposes | Yes | `[_fbp, ad_id, etc. — delete this row entirely if you don't run ads]` |
+| **Analytics** | Understand how visitors use the site (aggregated, to improve it) | Yes | `[_ga, _gid, if using Google Analytics]` / `[Plausible/Fathom, cookie-less alternative, mention if used instead]` |
+| **Marketing** | Track visitors for advertising/retargeting purposes | Yes | `[_fbp, ad_id, etc., delete this row entirely if you don't run ads]` |
 
 Delete any row you don't use. Add third-party cookie names exactly as they
 appear when you audit your site.
 
-### 4. Consent banner — required behaviour
+### 4. Consent banner: required behaviour
 
 Per EDPB/Garante guidance and the ePrivacy Directive:
 
@@ -44,7 +44,7 @@ Per EDPB/Garante guidance and the ePrivacy Directive:
 - **No pre-ticked boxes.** Categories other than "Necessary" must default to
   OFF.
 - A **"Reject all"** option must be as easy to select as "Accept all" (equal
-  prominence — same size, same visual weight, same number of clicks).
+  prominence, same size, same visual weight, same number of clicks).
 - The user must be able to change their choice at any time (e.g. a persistent
   "Cookie settings" link in the footer).
 - Consent must be logged (timestamp + choice) in case you need to
@@ -68,7 +68,7 @@ functionality).
 
 Some cookies are set by third parties whose services appear on our pages
 (e.g. [embedded video, payment processor, analytics provider]). We do not
-control these cookies directly — see the respective third party's own
+control these cookies directly, see the respective third party's own
 cookie/privacy policy: [list links].
 
 ### 7. More information
@@ -87,10 +87,10 @@ operator accept no liability for outcomes arising from use of this template.
 ---
 ---
 
-# NormaKit — Modello di Cookie Policy + Testo Banner di Consenso (IT)
+# NormaKit: Modello di Cookie Policy + Testo Banner di Consenso (IT)
 
 > **Come usare questo modello:** sostituisci i `[segnaposto tra parentesi]`, in
-> particolare la tabella cookie alla sezione 3 — verifica il tuo sito
+> particolare la tabella cookie alla sezione 3, verifica il tuo sito
 > (strumenti sviluppatore del browser → Applicazione → Cookie, o uno scanner
 > gratuito) ed elenca ciò che viene effettivamente impostato. Non elencare mai
 > cookie che non usi, e non ometterne mai di usati.
@@ -117,15 +117,15 @@ finalità elencate.
 
 | Categoria | Finalità | Consenso richiesto? | Esempi di cookie |
 |---|---|---|---|
-| **Necessari** | Necessari per il funzionamento del sito (gestione sessione, sicurezza, bilanciamento del carico, memorizzazione delle scelte sui cookie) | No — esenti secondo la normativa ePrivacy UE (strettamente necessari) | `[session_id]`, `[csrf_token]` |
+| **Necessari** | Necessari per il funzionamento del sito (gestione sessione, sicurezza, bilanciamento del carico, memorizzazione delle scelte sui cookie) | No, esenti secondo la normativa ePrivacy UE (strettamente necessari) | `[session_id]`, `[csrf_token]` |
 | **Funzionali** | Ricordare le tue preferenze (lingua, valuta, stato di login) | Sì | `[lang_pref]`, `[currency]` |
-| **Analitici** | Capire come i visitatori usano il sito (in forma aggregata, per migliorarlo) | Sì | `[_ga, _gid — se usi Google Analytics]` / `[Plausible/Fathom — alternativa senza cookie, indicalo se la usi]` |
-| **Marketing** | Tracciare i visitatori per finalità pubblicitarie/di retargeting | Sì | `[_fbp, ad_id, ecc. — elimina questa riga se non fai pubblicità]` |
+| **Analitici** | Capire come i visitatori usano il sito (in forma aggregata, per migliorarlo) | Sì | `[_ga, _gid, se usi Google Analytics]` / `[Plausible/Fathom, alternativa senza cookie, indicalo se la usi]` |
+| **Marketing** | Tracciare i visitatori per finalità pubblicitarie/di retargeting | Sì | `[_fbp, ad_id, ecc., elimina questa riga se non fai pubblicità]` |
 
 Elimina qualsiasi riga non pertinente. Aggiungi i nomi esatti dei cookie di
 terze parti come appaiono verificando il tuo sito.
 
-### 4. Banner di consenso — comportamento richiesto
+### 4. Banner di consenso: comportamento richiesto
 
 Secondo le linee guida EDPB/Garante e la Direttiva ePrivacy:
 
@@ -134,7 +134,7 @@ Secondo le linee guida EDPB/Garante e la Direttiva ePrivacy:
 - **Nessuna casella pre-selezionata.** Le categorie diverse da "Necessari"
   devono essere disattivate di default.
 - L'opzione **"Rifiuta tutto"** deve essere selezionabile con la stessa
-  facilità di "Accetta tutto" (pari evidenza — stessa dimensione, stesso peso
+  facilità di "Accetta tutto" (pari evidenza, stessa dimensione, stesso peso
   visivo, stesso numero di click).
 - L'utente deve poter modificare la propria scelta in qualsiasi momento (es.
   un link permanente "Impostazioni cookie" nel footer).
@@ -161,7 +161,7 @@ sito).
 
 Alcuni cookie sono impostati da terze parti i cui servizi compaiono sulle
 nostre pagine (es. [video incorporati, processore di pagamento, fornitore di
-analytics]). Non controlliamo direttamente questi cookie — consulta la
+analytics]). Non controlliamo direttamente questi cookie, consulta la
 rispettiva cookie/privacy policy della terza parte: [elenca i link].
 
 ### 7. Maggiori informazioni

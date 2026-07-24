@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GDPR Data Breach: What to Do in the First 72 Hours — NormaKit</title>
+<title>GDPR Data Breach: What to Do in the First 72 Hours (NormaKit)</title>
 <meta name="description" content="A security incident just happened. What GDPR Art. 33/34 actually requires in the first 72 hours: whether you must notify the Garante, whether you must notify affected people, and the internal log you need either way.">
 <link rel="canonical" href="https://normakit.pages.dev/blog/gdpr-data-breach-72-hours">
 <meta property="og:type" content="article">
@@ -53,59 +53,59 @@
   <p>A "personal data breach" under GDPR is broader than most people assume: it's any
   accidental or unlawful destruction, loss, alteration, or unauthorised disclosure of
   or access to personal data. A lost laptop, an email sent to the wrong recipient, a
-  leaked spreadsheet, or ransomware all count — not just large-scale hacking. The
+  leaked spreadsheet, or ransomware all count, not just large-scale hacking. The
   moment anyone on your team becomes aware, a clock starts. Here's what actually has
   to happen next.</p>
 
-  <h2>Step 0 — the 72-hour clock</h2>
+  <h2>Step 0: the 72-hour clock</h2>
   <div class="callout">
     <b>The clock starts on awareness, not on the incident itself.</b> If you find out
     on Tuesday about something that happened last week, your 72 hours (Art. 33) start
-    Tuesday. Log the exact date/time you became aware immediately — you'll need it.
+    Tuesday. Log the exact date/time you became aware immediately, you'll need it.
   </div>
 
-  <h2>Step 1 — contain and assess</h2>
+  <h2>Step 1: contain and assess</h2>
   <ul class="checklist">
     <li><b>Contain it.</b> Revoke access, rotate passwords, isolate affected systems,
     take a compromised service offline if needed.</li>
-    <li><b>Identify what happened.</b> What data, roughly how many people, and — this
-    matters most for severity — is any of it special-category data (health, etc.) or
+    <li><b>Identify what happened.</b> What data, roughly how many people, and, this
+    matters most for severity, is any of it special-category data (health, etc.) or
     financial/ID data?</li>
     <li><b>Check if it's still ongoing.</b> Is data still being exposed right now?</li>
     <li><b>Preserve evidence</b> (logs, screenshots) before remediating, where
-    possible — you'll need it to explain what happened later.</li>
+    possible, you'll need it to explain what happened later.</li>
   </ul>
 
   <h2>Do you have to notify the Garante (the supervisory authority)?</h2>
   <p>Notify within 72 hours <b>unless</b> the breach is "unlikely to result in a risk
   to the rights and freedoms of natural persons" (Art. 33(1)). Ask yourself:</p>
   <ul>
-    <li>Could this data be used to harm the people affected — fraud, identity theft,
+    <li>Could this data be used to harm the people affected, fraud, identity theft,
     discrimination, reputational or financial harm?</li>
     <li>Was the data encrypted or pseudonymised well enough that whoever accessed it
     can't actually use it (e.g. a stolen backup, fully encrypted, key never exposed)?</li>
     <li>How many people, and how sensitive is the data?</li>
   </ul>
-  <p><b>If there's any real risk — the normal case for anything short of fully
-  encrypted, unreadable data — notify.</b> When genuinely unsure, notify anyway: the
+  <p><b>If there's any real risk, the normal case for anything short of fully
+  encrypted, unreadable data, notify.</b> When genuinely unsure, notify anyway: the
   penalty for failing to report a real breach is typically worse than the friction of
   reporting one that turns out to be low-risk. If you can't finish your assessment
   within 72 hours, notify anyway with your reasons for the delay (Art. 33(1) allows a
-  phased notification) — don't wait for a complete picture before the first report.</p>
+  phased notification), don't wait for a complete picture before the first report.</p>
 
   <h2>Do you also have to notify the people affected?</h2>
   <p>Separately, Art. 34 requires notifying affected individuals directly, without
-  undue delay, <b>only if the breach is likely to result in a HIGH risk</b> to them —
+  undue delay, <b>only if the breach is likely to result in a HIGH risk</b> to them,
   a higher bar than the Garante notification above. Ask:</p>
   <ul>
-    <li>Is this the kind of data that causes serious harm if misused — passwords,
+    <li>Is this the kind of data that causes serious harm if misused, passwords,
     financial details, ID documents, health data, precise location?</li>
     <li>Can the affected people protect themselves without knowing (e.g. changing a
     reused password, watching for fraud)?</li>
   </ul>
   <p>You're exempt from notifying individuals if the data was encrypted/unintelligible
   to whoever accessed it, if you've since taken measures that remove the high risk, or
-  if direct notice would take disproportionate effort — in which case a public notice
+  if direct notice would take disproportionate effort, in which case a public notice
   (e.g. a site-wide banner) can substitute, as long as it informs people just as
   effectively.</p>
 
@@ -113,11 +113,11 @@
     <tr><th>Question</th><th>If yes</th></tr>
     <tr><td>Any real risk to affected people?</td><td>Notify the Garante within 72h</td></tr>
     <tr><td>High risk specifically (sensitive data, real harm possible)?</td><td>Also notify affected individuals directly</td></tr>
-    <tr><td>Data was fully encrypted, key never exposed?</td><td>Often exempt from both — document why</td></tr>
+    <tr><td>Data was fully encrypted, key never exposed?</td><td>Often exempt from both, document why</td></tr>
   </table>
 
   <h2>The one step everyone forgets: the internal log</h2>
-  <p>Art. 33(5) requires you to document <b>every</b> breach internally — including
+  <p>Art. 33(5) requires you to document <b>every</b> breach internally, including
   ones you decide not to report to anyone. The Garante can ask to see this log at any
   time, and "we didn't think it was serious enough to write down" is not a defensible
   answer if they do. At minimum, record: when discovered, when it happened, how it was
@@ -129,12 +129,12 @@
   <p>A breach-response plan sits alongside your other GDPR paperwork, not instead of
   it. If a breach happens, you'll likely also need to check your
   <a href="gdpr-privacy-policy-checklist-freelancers">Privacy Policy</a> covers what
-  you told people about your security measures, and — if the breach happened at a
-  processor working on your behalf (a developer, host, or agency) — your
+  you told people about your security measures, and, if the breach happened at a
+  processor working on your behalf (a developer, host, or agency), your
   <a href="data-processing-agreement-freelancers">DPA</a> should already specify their
   own breach-notification obligation back to you. Your
   <a href="ropa-basics-for-freelancers">ROPA</a> is also the fastest way to answer
-  "what data was affected and why did you have it" — the first questions the
+  "what data was affected and why did you have it", the first questions the
   Garante will ask. If the breach came through a form on your site, check whether
   its <a href="gdpr-consent-clauses-for-forms">consent clause</a> also needs
   updating. For the full picture of how all these pieces fit together, see our
@@ -145,7 +145,7 @@
     <p>NormaKit is a bilingual (EN/IT) GDPR document pack that includes a ready-to-use
     breach-notification checklist with a decision tree, an internal incident log
     template, and pre-written notification letter templates (to the Garante and to
-    affected individuals) — plus a Privacy Policy, Cookie Policy, consent clauses, a
+    affected individuals), plus a Privacy Policy, Cookie Policy, consent clauses, a
     full Art. 28 DPA, and a ROPA template. €29 one-time, instant download, editable
     .docx and .pdf.</p>
     <a class="buy-btn" href="../">See what's included &rarr;</a>
@@ -153,7 +153,7 @@
 
   <p class="disclaimer"><b>Not legal advice.</b> This guide is general information,
   not a substitute for advice from a qualified lawyer or data protection professional
-  about your specific incident — especially while it's active, when you should also
+  about your specific incident, especially while it's active, when you should also
   consider consulting a lawyer and, for significant incidents, a cybersecurity
   professional. NormaKit's templates are likewise informational starting points, not
   legal advice, and should be reviewed and adapted before use.</p>

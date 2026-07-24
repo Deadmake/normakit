@@ -1,6 +1,6 @@
 // Converts the markdown documents in ../documents/*.md into a matching
 // .docx + .pdf per document, then zips everything into a single bundle
-// for delivery. Pure-JS (docx, pdfkit, marked) — no headless browser or
+// for delivery. Pure-JS (docx, pdfkit, marked), no headless browser or
 // system binary (pandoc/libreoffice) required, since neither is available
 // in this sandbox.
 const fs = require("fs");
