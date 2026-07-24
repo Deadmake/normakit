@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free GDPR Privacy Policy Generator for Freelancers (EN/IT) — NormaKit</title>
+<meta name="description" content="Free instant GDPR privacy policy generator for freelancers and micro-businesses. Fill in your details, get a ready-to-use policy in English or Italian, referencing the Garante. No signup, no account.">
+<link rel="canonical" href="https://normakit.pages.dev/tools/privacy-policy-generator">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free GDPR Privacy Policy Generator (EN/IT) — NormaKit">
+<meta property="og:description" content="Fill in your details, get a ready-to-use GDPR privacy policy in English or Italian. Free, instant, no signup.">
+<meta property="og:url" content="https://normakit.pages.dev/tools/privacy-policy-generator">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "NormaKit Free GDPR Privacy Policy Generator",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "description": "Free tool that generates a GDPR-compliant privacy policy in English or Italian for freelancers and micro-businesses, referencing the Garante and EU GDPR.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+  "brand": { "@type": "Brand", "name": "NormaKit" }
+}
+</script>
+<style>
+  :root {
+    --ink: #1a1d24; --ink-soft: #545b68; --bg: #fbfbfa; --card: #ffffff;
+    --line: #e4e4e0; --accent: #1f5c4c; --accent-ink: #ffffff;
+    --warn-bg: #fdf6e8; --warn-line: #e8d8ab;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.55; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px 64px; }
+  nav.top { padding: 24px 0; }
+  nav.top a { color: var(--accent); text-decoration: none; font-weight: 600; font-size: 14px; }
+  .brand { font-weight: 700; font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
+  h1 { font-size: clamp(26px, 4vw, 34px); line-height: 1.2; margin: 0 0 10px; }
+  .sub { font-size: 16px; color: var(--ink-soft); max-width: 62ch; margin: 0 0 28px; }
+  .badges { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 32px; }
+  .badge { font-size: 12.5px; background: var(--card); border: 1px solid var(--line); padding: 5px 11px; border-radius: 999px; color: var(--ink-soft); }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
+  @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+  .panel h2 { font-size: 16px; margin: 0 0 16px; }
+  label { display: block; font-size: 13.5px; font-weight: 600; margin: 14px 0 5px; }
+  label:first-of-type { margin-top: 0; }
+  label .opt { font-weight: 400; color: var(--ink-soft); }
+  input[type=text], input[type=email], textarea, select {
+    width: 100%; font-family: inherit; font-size: 14px; padding: 9px 11px;
+    border: 1px solid var(--line); border-radius: 8px; background: #fff; color: var(--ink);
+  }
+  textarea { resize: vertical; min-height: 46px; }
+  .check-row { display: flex; align-items: flex-start; gap: 8px; margin: 10px 0; font-size: 13.5px; }
+  .check-row input { margin-top: 3px; flex-shrink: 0; }
+  .check-row label { margin: 0; font-weight: 400; }
+  .langtoggle { display: flex; gap: 6px; margin-bottom: 16px; }
+  .langtoggle button { flex: 1; padding: 8px; font-size: 13.5px; font-weight: 600; border-radius: 8px; border: 1px solid var(--line); background: #fff; color: var(--ink-soft); cursor: pointer; }
+  .langtoggle button.active { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .output-wrap { position: sticky; top: 20px; }
+  .output-actions { display: flex; gap: 8px; margin-bottom: 10px; }
+  .output-actions button { flex: 1; font-size: 13.5px; font-weight: 600; padding: 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--accent); color: var(--accent-ink); cursor: pointer; }
+  .output-actions button.secondary { background: #fff; color: var(--ink); }
+  #output { width: 100%; height: 520px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12.5px; line-height: 1.5; padding: 14px; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink); white-space: pre-wrap; }
+  .copied { font-size: 12.5px; color: var(--accent); margin-top: 6px; height: 16px; }
+  .fieldset-title { font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-soft); margin: 22px 0 4px; font-weight: 700; }
+  .fieldset-title:first-of-type { margin-top: 0; }
+  .callout { background: var(--warn-bg); border: 1px solid var(--warn-line); border-radius: 10px; padding: 14px 16px; font-size: 13px; color: #6b5a1f; margin: 24px 0; }
+  .cta { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px; margin: 32px 0; }
+  .cta h3 { margin-top: 0; font-size: 18px; }
+  .cta p { font-size: 14.5px; color: var(--ink-soft); }
+  a.buy-btn { display: inline-block; text-decoration: none; background: var(--accent); color: var(--accent-ink); font-weight: 600; font-size: 15px; padding: 12px 20px; border-radius: 10px; margin-top: 8px; }
+  .disclaimer { font-size: 12.5px; color: var(--ink-soft); margin-top: 40px; border-top: 1px solid var(--line); padding-top: 16px; }
+  footer { font-size: 12.5px; color: var(--ink-soft); margin-top: 24px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="top"><a href="../">&larr; NormaKit</a></nav>
+  <div class="brand">Free tool</div>
+  <h1>GDPR Privacy Policy Generator</h1>
+  <p class="sub">Fill in your details on the left, get a ready-to-use GDPR privacy policy on
+  the right — updates live, no signup, nothing sent to a server. Available in English or Italian.</p>
+  <div class="badges">
+    <span class="badge">100% free</span>
+    <span class="badge">No signup</span>
+    <span class="badge">Runs entirely in your browser</span>
+    <span class="badge">EN / IT</span>
+  </div>
+
+  <div class="grid">
+    <div class="panel">
+      <h2>Your details</h2>
+      <div class="langtoggle">
+        <button type="button" id="lang-en" class="active">English</button>
+        <button type="button" id="lang-it">Italiano</button>
+      </div>
+
+      <label for="f-name">Business / trading name <span class="opt">(required)</span></label>
+      <input type="text" id="f-name" placeholder="e.g. Studio Rossi">
+
+      <label for="f-legal">Legal name <span class="opt">(optional, if different)</span></label>
+      <input type="text" id="f-legal" placeholder="e.g. Mario Rossi, Partita IVA ...">
+
+      <label for="f-address">Registered address <span class="opt">(optional)</span></label>
+      <textarea id="f-address" placeholder="Via Roma 1, 20100 Milano, Italy"></textarea>
+
+      <label for="f-vat">Partita IVA / VAT number <span class="opt">(optional)</span></label>
+      <input type="text" id="f-vat" placeholder="IT01234567890">
+
+      <label for="f-email">Contact email for privacy matters <span class="opt">(required)</span></label>
+      <input type="email" id="f-email" placeholder="privacy@yourdomain.com">
+
+      <div class="fieldset-title">Data protection officer</div>
+      <div class="check-row">
+        <input type="checkbox" id="f-dpo-yes">
+        <label for="f-dpo-yes">We have appointed a DPO</label>
+      </div>
+      <input type="text" id="f-dpo-details" placeholder="DPO name and contact email" style="display:none; margin-top:6px;">
+
+      <div class="fieldset-title">What data do you collect?</div>
+      <div class="check-row"><input type="checkbox" id="f-cat-contact" checked><label for="f-cat-contact">Contact data (name, email, phone)</label></div>
+      <div class="check-row"><input type="checkbox" id="f-cat-account"><label for="f-cat-account">Account data (username, password, purchase history)</label></div>
+      <div class="check-row"><input type="checkbox" id="f-cat-billing"><label for="f-cat-billing">Billing data (invoicing, payment confirmation)</label></div>
+      <div class="check-row"><input type="checkbox" id="f-cat-technical" checked><label for="f-cat-technical">Technical data (IP address, browser, analytics)</label></div>
+      <div class="check-row"><input type="checkbox" id="f-cat-marketing"><label for="f-cat-marketing">Marketing data (newsletter, only if opted in)</label></div>
+
+      <div class="fieldset-title">International transfers</div>
+      <div class="check-row">
+        <input type="checkbox" id="f-noneu">
+        <label for="f-noneu">I use at least one non-EU tool/processor (e.g. a US-based analytics or email tool)</label>
+      </div>
+      <input type="text" id="f-noneu-name" placeholder="Name of the tool/processor (optional)" style="display:none; margin-top:6px;">
+    </div>
+
+    <div class="output-wrap">
+      <div class="output-actions">
+        <button type="button" id="btn-copy">Copy to clipboard</button>
+        <button type="button" id="btn-download" class="secondary">Download .txt</button>
+      </div>
+      <div class="copied" id="copied-msg"></div>
+      <textarea id="output" readonly></textarea>
+    </div>
+  </div>
+
+  <div class="callout">
+    <b>How this works:</b> everything happens in your browser — nothing you type is
+    sent anywhere or stored. This generates one document (a privacy policy) in one
+    language at a time, as plain text you can paste into your site. It's a template,
+    not legal advice — review it (or have a professional review it) before publishing.
+  </div>
+
+  <div class="cta">
+    <h3>Need more than a privacy policy?</h3>
+    <p>NormaKit's full pack has all 7 documents — privacy policy, cookie policy,
+    consent clauses, a full Art. 28 DPA, a mini ROPA template, a breach-notification
+    checklist, and a plain-language guide — in <b>both</b> English and Italian together,
+    delivered as editable .docx and .pdf (not plain text), cross-referencing each other
+    correctly. €29 one-time.</p>
+    <a class="buy-btn" href="../#buy">See the full pack — €29 &rarr;</a>
+  </div>
+
+  <p class="disclaimer"><b>Not legal advice.</b> This tool generates a template for
+  general informational purposes only and does not constitute legal advice. It must be
+  reviewed and adapted to your specific business and, where appropriate, checked by a
+  qualified lawyer or data protection professional before use. NormaKit and its
+  operator accept no liability for outcomes arising from use of this template.</p>
+
+  <footer><a href="../">&larr; Back to NormaKit</a> · © 2026 NormaKit</footer>
+</div>
+
+<script>
+(function () {
+  var lang = 'en';
+  var $ = function (id) { return document.getElementById(id); };
+
+  var dpoYes = $('f-dpo-yes'), dpoDetails = $('f-dpo-details');
+  dpoYes.addEventListener('change', function () {
+    dpoDetails.style.display = dpoYes.checked ? 'block' : 'none';
+    render();
+  });
+
+  var noneuYes = $('f-noneu'), noneuName = $('f-noneu-name');
+  noneuYes.addEventListener('change', function () {
+    noneuName.style.display = noneuYes.checked ? 'block' : 'none';
+    render();
+  });
+
+  $('lang-en').addEventListener('click', function () { lang = 'en'; setActive(); render(); });
+  $('lang-it').addEventListener('click', function () { lang = 'it'; setActive(); render(); });
+  function setActive() {
+    $('lang-en').classList.toggle('active', lang === 'en');
+    $('lang-it').classList.toggle('active', lang === 'it');
+  }
+
+  var CATEGORIES = {
+    contact:   { checkbox: 'f-cat-contact',
+      en: { label: 'Contact data', examples: 'Name, email, phone', purpose: 'Respond to enquiries, provide services', basis: 'Contract (Art. 6(1)(b)) / Legitimate interest (Art. 6(1)(f))' },
+      it: { label: 'Dati di contatto', examples: 'Nome, email, telefono', purpose: 'Rispondere a richieste, fornire servizi', basis: 'Contratto (Art. 6(1)(b)) / Legittimo interesse (Art. 6(1)(f))' } },
+    account:   { checkbox: 'f-cat-account',
+      en: { label: 'Account data', examples: 'Username, password (hashed), purchase history', purpose: 'Create and manage your account', basis: 'Contract (Art. 6(1)(b))' },
+      it: { label: 'Dati account', examples: 'Username, password (con hash), storico acquisti', purpose: 'Creare e gestire il tuo account', basis: 'Contratto (Art. 6(1)(b))' } },
+    billing:   { checkbox: 'f-cat-billing',
+      en: { label: 'Billing data', examples: 'Billing address, VAT number, payment confirmation', purpose: 'Process payment, issue invoices, comply with tax law', basis: 'Contract (Art. 6(1)(b)) / Legal obligation (Art. 6(1)(c))' },
+      it: { label: 'Dati di fatturazione', examples: 'Indirizzo di fatturazione, P.IVA, conferma pagamento', purpose: 'Elaborare il pagamento, emettere fatture, adempiere obblighi fiscali', basis: 'Contratto (Art. 6(1)(b)) / Obbligo legale (Art. 6(1)(c))' } },
+    technical: { checkbox: 'f-cat-technical',
+      en: { label: 'Technical data', examples: 'IP address, browser type, device type, pages visited', purpose: 'Operate and secure the site', basis: 'Legitimate interest (Art. 6(1)(f))' },
+      it: { label: 'Dati tecnici', examples: 'Indirizzo IP, tipo di browser, tipo di dispositivo, pagine visitate', purpose: 'Gestire e proteggere il sito', basis: 'Legittimo interesse (Art. 6(1)(f))' } },
+    marketing: { checkbox: 'f-cat-marketing',
+      en: { label: 'Marketing data', examples: 'Email address (only if you opted in)', purpose: 'Send newsletters/offers', basis: 'Consent (Art. 6(1)(a))' },
+      it: { label: 'Dati di marketing', examples: 'Indirizzo email (solo se hai dato consenso)', purpose: 'Inviare newsletter/offerte', basis: 'Consenso (Art. 6(1)(a))' } }
+  };
+
+  function today() {
+    var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    var monthsIt = ['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre'];
+    var d = new Date();
+    return lang === 'en'
+      ? months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear()
+      : d.getDate() + ' ' + monthsIt[d.getMonth()] + ' ' + d.getFullYear();
+  }
+
+  function val(id, fallback) {
+    var v = $(id).value.trim();
+    return v ? v : (fallback || '');
+  }
+
+  function render() {
+    var name = val('f-name', lang === 'en' ? '[Your business name]' : '[Nome della tua attività]');
+    var legal = val('f-legal', '');
+    var address = val('f-address', '');
+    var vat = val('f-vat', '');
+    var email = val('f-email', lang === 'en' ? '[your privacy email]' : '[la tua email privacy]');
+    var dpoText = dpoYes.checked
+      ? val('f-dpo-details', lang === 'en' ? '[DPO name and contact]' : '[nome e contatto del DPO]')
+      : (lang === 'en'
+          ? 'Not appointed — most freelancers/SMEs are not legally required to appoint one, unless core activities involve large-scale/systematic monitoring or large-scale special-category data.'
+          : 'Non nominato — la maggior parte dei liberi professionisti/PMI non è legalmente tenuta a nominarne uno, salvo che le attività principali comportino monitoraggio sistematico su larga scala o trattamento su larga scala di categorie particolari di dati.');
+
+    var rows = [];
+    Object.keys(CATEGORIES).forEach(function (key) {
+      var c = CATEGORIES[key];
+      if ($(c.checkbox).checked) rows.push(c[lang]);
+    });
+
+    var intl = noneuYes.checked
+      ? (lang === 'en'
+          ? 'Some of our processors (for example, ' + val('f-noneu-name', '[processor name]') + ') are located outside the EEA. Where this happens, we rely on the European Commission\'s Standard Contractual Clauses (SCCs) or an adequacy decision to ensure your data receives an equivalent level of protection. You can request a copy of the relevant safeguard by contacting us at ' + email + '.'
+          : 'Alcuni dei nostri fornitori (ad esempio ' + val('f-noneu-name', '[nome fornitore]') + ') si trovano al di fuori del SEE. In questi casi ci basiamo sulle Clausole Contrattuali Standard (SCC) della Commissione Europea o su una decisione di adeguatezza per garantire un livello di protezione equivalente. Puoi richiedere una copia della relativa garanzia scrivendo a ' + email + '.')
+      : (lang === 'en'
+          ? 'All the processors we use store data within the European Economic Area (EEA).'
+          : 'Tutti i fornitori che utilizziamo conservano i dati all\'interno dello Spazio Economico Europeo (SEE).');
+
+    var text = lang === 'en' ? renderEn(name, legal, address, vat, email, dpoText, rows, intl) : renderIt(name, legal, address, vat, email, dpoText, rows, intl);
+    $('output').value = text;
+  }
+
+  function tableRows(rows, sep) {
+    return rows.map(function (r) {
+      return '- ' + r.label + ' (' + r.examples + ') — ' + r.purpose + '. Legal basis: ' + r.basis + '.';
+    }).join('\n');
+  }
+
+  function renderEn(name, legal, address, vat, email, dpoText, rows, intl) {
+    var lines = [];
+    lines.push('PRIVACY POLICY');
+    lines.push('Last updated: ' + today());
+    lines.push('');
+    lines.push('1. Who we are (data controller)');
+    lines.push(name);
+    if (legal) lines.push(legal);
+    if (address) lines.push(address);
+    if (vat) lines.push('VAT / Partita IVA: ' + vat);
+    lines.push('Contact: ' + email);
+    lines.push('');
+    lines.push('We are the "data controller" of the personal data described in this policy — meaning we decide why and how it is processed.');
+    lines.push('');
+    lines.push('Data Protection Officer (DPO): ' + dpoText);
+    lines.push('');
+    lines.push('2. What data we collect and why');
+    lines.push(rows.length ? tableRows(rows) : '(No data categories selected yet — check at least one on the left.)');
+    lines.push('');
+    lines.push('We do not collect special categories of data (health, religion, political opinions, etc.) unless explicitly stated elsewhere on our site.');
+    lines.push('');
+    lines.push('3. Where your data comes from');
+    lines.push('Directly from you (forms you fill in, purchases you make, emails you send us), and automatically via cookies/analytics when you browse our site.');
+    lines.push('');
+    lines.push('4. Who we share it with');
+    lines.push('- Payment processors — to process payments, acting as an independent controller for the payment data they process.');
+    lines.push('- Hosting/IT providers — to store data securely, acting as our processor under a data processing agreement.');
+    lines.push('- Email/marketing tools — only for subscribers who opted in, acting as our processor.');
+    lines.push('- Professional advisors (accountant, lawyer) — where necessary, under confidentiality obligations.');
+    lines.push('- Authorities — only where required by law.');
+    lines.push('We do not sell your personal data to third parties.');
+    lines.push('');
+    lines.push('5. International transfers');
+    lines.push(intl);
+    lines.push('');
+    lines.push('6. How long we keep your data');
+    lines.push('- Account data: for as long as your account is active, plus a reasonable period after closure.');
+    lines.push('- Billing/invoice data: 10 years (Italian tax law retention requirement, Art. 2220 Codice Civile / Art. 22 DPR 600/1973 — adjust to your jurisdiction).');
+    lines.push('- Marketing/newsletter data: until you unsubscribe, or after a period of inactivity.');
+    lines.push('- Technical/log data: 12 months, then anonymised or deleted.');
+    lines.push('');
+    lines.push('7. Your rights');
+    lines.push('Under the GDPR, you have the right to access (Art. 15), rectify (Art. 16), erase (Art. 17), restrict (Art. 18), port your data (Art. 20), object to processing (Art. 21), withdraw consent at any time (Art. 7(3)), and lodge a complaint with a supervisory authority — in Italy, the Garante per la protezione dei dati personali (www.garanteprivacy.it), or the data protection authority of your own EU country of residence.');
+    lines.push('To exercise any of these rights, contact us at ' + email + '. We will respond within one month (extendable by two further months for complex requests, per Art. 12(3)).');
+    lines.push('');
+    lines.push('8. Security');
+    lines.push('We apply appropriate technical and organisational measures (Art. 32) to protect your data, including encryption in transit (HTTPS), access controls, and regular backups.');
+    lines.push('');
+    lines.push('9. Automated decision-making');
+    lines.push('We do not use automated decision-making or profiling that produces legal or similarly significant effects on you.');
+    lines.push('');
+    lines.push('10. Changes to this policy');
+    lines.push('We may update this policy from time to time. The "Last updated" date at the top will reflect the most recent revision.');
+    lines.push('');
+    lines.push('11. Contact');
+    lines.push('Questions about this policy or your data: ' + email + (address ? ', ' + address : '') + '.');
+    lines.push('');
+    lines.push('---');
+    lines.push('Not legal advice. This document is a template provided for general informational purposes only and does not constitute legal advice. It must be reviewed and adapted to your specific business and, where appropriate, checked by a qualified lawyer or data protection professional before use.');
+    lines.push('');
+    lines.push('Generated free at normakit.pages.dev/tools/privacy-policy-generator');
+    return lines.join('\n');
+  }
+
+  function renderIt(name, legal, address, vat, email, dpoText, rows, intl) {
+    var lines = [];
+    lines.push('INFORMATIVA SULLA PRIVACY');
+    lines.push('Ultimo aggiornamento: ' + today());
+    lines.push('');
+    lines.push('1. Chi siamo (titolare del trattamento)');
+    lines.push(name);
+    if (legal) lines.push(legal);
+    if (address) lines.push(address);
+    if (vat) lines.push('Partita IVA: ' + vat);
+    lines.push('Contatto: ' + email);
+    lines.push('');
+    lines.push('Siamo il "titolare del trattamento" dei dati personali descritti in questa informativa — cioè decidiamo perché e come vengono trattati.');
+    lines.push('');
+    lines.push('Responsabile della Protezione dei Dati (DPO): ' + dpoText);
+    lines.push('');
+    lines.push('2. Quali dati raccogliamo e perché');
+    lines.push(rows.length ? tableRows(rows) : '(Nessuna categoria di dati selezionata — spuntane almeno una a sinistra.)');
+    lines.push('');
+    lines.push('Non raccogliamo categorie particolari di dati (salute, opinioni religiose o politiche, ecc.) salvo diversa indicazione esplicita sul sito.');
+    lines.push('');
+    lines.push('3. Da dove provengono i tuoi dati');
+    lines.push('Direttamente da te (moduli compilati, acquisti effettuati, email inviateci) e automaticamente tramite cookie/strumenti di analisi durante la navigazione.');
+    lines.push('');
+    lines.push('4. Con chi li condividiamo');
+    lines.push('- Processori di pagamento — per elaborare i pagamenti, agendo come titolari autonomi per i dati di pagamento che trattano.');
+    lines.push('- Fornitori di hosting/IT — per archiviare i dati in modo sicuro, agendo come nostro responsabile del trattamento.');
+    lines.push('- Strumenti di email/marketing — solo per gli iscritti che hanno dato consenso, agendo come nostro responsabile.');
+    lines.push('- Consulenti professionali (commercialista, avvocato) — ove necessario, soggetti a obblighi di riservatezza.');
+    lines.push('- Autorità — solo se richiesto dalla legge.');
+    lines.push('Non vendiamo i tuoi dati personali a terzi.');
+    lines.push('');
+    lines.push('5. Trasferimenti internazionali');
+    lines.push(intl);
+    lines.push('');
+    lines.push('6. Per quanto tempo conserviamo i tuoi dati');
+    lines.push('- Dati account: per la durata dell\'account attivo, più un periodo ragionevole dopo la chiusura.');
+    lines.push('- Dati di fatturazione: 10 anni (obbligo di conservazione fiscale italiano, Art. 2220 Codice Civile / Art. 22 DPR 600/1973 — adatta alla tua giurisdizione).');
+    lines.push('- Dati marketing/newsletter: fino alla disiscrizione, o dopo un periodo di inattività.');
+    lines.push('- Dati tecnici/log: 12 mesi, poi anonimizzati o cancellati.');
+    lines.push('');
+    lines.push('7. I tuoi diritti');
+    lines.push('Ai sensi del GDPR, hai diritto ad accedere (Art. 15), rettificare (Art. 16), cancellare (Art. 17), limitare (Art. 18), ricevere in formato portabile i tuoi dati (Art. 20), opporti al trattamento (Art. 21), revocare il consenso in qualsiasi momento (Art. 7(3)), e presentare un reclamo a un\'autorità di controllo — in Italia, il Garante per la protezione dei dati personali (www.garanteprivacy.it), o l\'autorità di protezione dati del tuo paese UE di residenza.');
+    lines.push('Per esercitare uno di questi diritti, contattaci a ' + email + '. Risponderemo entro un mese (prorogabile di due mesi per richieste complesse, ai sensi dell\'Art. 12(3)).');
+    lines.push('');
+    lines.push('8. Sicurezza');
+    lines.push('Adottiamo misure tecniche e organizzative adeguate (Art. 32) per proteggere i tuoi dati, tra cui cifratura in transito (HTTPS), controlli di accesso e backup regolari.');
+    lines.push('');
+    lines.push('9. Processi decisionali automatizzati');
+    lines.push('Non utilizziamo processi decisionali automatizzati o di profilazione che producano effetti giuridici o similmente significativi nei tuoi confronti.');
+    lines.push('');
+    lines.push('10. Modifiche alla presente informativa');
+    lines.push('Potremmo aggiornare periodicamente questa informativa. La data "Ultimo aggiornamento" in cima rifletterà la revisione più recente.');
+    lines.push('');
+    lines.push('11. Contatti');
+    lines.push('Domande su questa informativa o sui tuoi dati: ' + email + (address ? ', ' + address : '') + '.');
+    lines.push('');
+    lines.push('---');
+    lines.push('Non è consulenza legale. Questo documento è un modello fornito a scopo puramente informativo e non costituisce consulenza legale. Deve essere rivisto e adattato alla specifica attività e, ove opportuno, verificato da un legale o da un esperto di protezione dati prima dell\'uso.');
+    lines.push('');
+    lines.push('Generato gratuitamente su normakit.pages.dev/tools/privacy-policy-generator');
+    return lines.join('\n');
+  }
+
+  ['f-name','f-legal','f-address','f-vat','f-email','f-dpo-details','f-noneu-name',
+   'f-cat-contact','f-cat-account','f-cat-billing','f-cat-technical','f-cat-marketing'
+  ].forEach(function (id) {
+    var el = $(id);
+    el.addEventListener('input', render);
+    el.addEventListener('change', render);
+  });
+
+  $('btn-copy').addEventListener('click', function () {
+    var out = $('output');
+    out.select();
+    var ok = false;
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(out.value);
+        ok = true;
+      } else {
+        ok = document.execCommand('copy');
+      }
+    } catch (e) { ok = false; }
+    $('copied-msg').textContent = ok ? (lang === 'en' ? 'Copied to clipboard.' : 'Copiato negli appunti.') : '';
+    if (ok) setTimeout(function () { $('copied-msg').textContent = ''; }, 2500);
+  });
+
+  $('btn-download').addEventListener('click', function () {
+    var blob = new Blob([$('output').value], { type: 'text/plain;charset=utf-8' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = lang === 'en' ? 'privacy-policy.txt' : 'informativa-privacy.txt';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  });
+
+  render();
+})();
+</script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "082e73ff60604f31b0df22bc423c4206"}'></script>
+</body>
+</html>
