@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 404 104" width="404" height="104" role="img" aria-label="NormaKit — GDPR compliance documents">
+  <g transform="translate(8,16)">
+    <rect x="0" y="0" width="72" height="72" rx="17" fill="#1f5c4c"/>
+    <path d="M20.2 23.8 L36 17.3 L51.8 23.8 L51.8 38.9 C51.8 49 44.6 54.7 36 57.6 C27.4 54.7 20.2 49 20.2 38.9 Z" fill="#ffffff"/>
+    <path d="M28.1 37.4 L33.8 43.2 L44.6 29.5" fill="none" stroke="#1f5c4c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="96" y="68" font-family="'Liberation Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif" font-size="46" font-weight="700" letter-spacing="-0.5">
+    <tspan fill="#1a1d24">Norma</tspan><tspan fill="#1f5c4c">Kit</tspan>
+  </text>
+</svg>
