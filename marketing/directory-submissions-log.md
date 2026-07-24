@@ -79,3 +79,52 @@ actually submittable here. This shrinks the realistic candidate pool for
 "free directory backlinks" to nearly nothing without a new capability —
 treat P3 as tooling-exhausted, not just under-researched, until either a
 browser tool or a durable brand email exists.
+
+## Retried iter 29 (2026-07-24) — ToolDirs, now that gap (b) is closed
+(playwright MCP + real brand logo/screenshots available) — corrects the
+iter-26 "not account-gated" read
+
+With a working headless browser and the iter-27 brand asset set
+(`site/brand/normakit-icon-512.png` as the logo; fresh screenshots of the
+landing page and the free tool taken this iteration), drove
+`tooldirs.com/submit` end-to-end via playwright: filled Tool URL, Name,
+Tagline, a real 1581-character description grounded in the actual product
+(7 EN/IT documents, the free client-side generator, the Italy/Partita-IVA
+angle), uploaded the logo + 2 screenshots, picked categories
+(Productivity, Boilerplates), pricing model (Freemium), platform (Web) —
+all of step 1 works with zero login. **Selected the free tier and clicked
+"Verify and Submit" — this is the actual account gate**: it redirected
+straight to `/login`, which only offers Google OAuth, GitHub OAuth, or
+email+verification-code/magic-link. No anonymous/guest submission path
+exists; iter 26's "the one candidate that's genuinely not account-gated"
+was wrong — it's account-gated at the final submit step, just not at the
+form-filling step, which is why the earlier page-source-only check missed
+it.
+
+**Decision: did not create an account.** GitHub OAuth would tie the
+listing to the operator's personal GitHub identity (`Deadmake`) — a brand
+public-facing account carrying the operator's personal handle, against
+the hard rule in CLAUDE.md. Google OAuth: no brand Google account exists.
+Email+code: would need a durable inbox to receive the code and, unlike a
+one-time form confirmation, an *account* benefits from ongoing access
+(editing the listing, re-verifying the footer backlink) — the same
+disposable-email anti-pattern already ruled out for Indie Hackers/SaaSHub
+in earlier iterations, for the same reason. **Also reverted** an
+in-progress footer-backlink edit to `site/index.html` (added, then removed
+before commit) once the submission didn't actually complete — the free
+tier requires a live dofollow backlink in the footer, and claiming "Listed
+on ToolDirs" while not actually listed would be false.
+
+**Updated structural finding:** ToolDirs is not a genuine exception to gap
+(a) — it still needs a durable brand email (or a brand-owned OAuth
+identity) to complete, same as every other candidate in this log. Revisit
+once P6 (brand email via Cloudflare Email Routing) is unblocked — at that
+point (i) sign up with `hello@normakit.com` via email+code, (ii) redo this
+same form fill (data below is reusable), (iii) add the dofollow footer
+backlink to a deployed `site/index.html`, (iv) select free tier and
+verify. Reusable submission content for that future attempt: Tagline
+"GDPR & privacy documents built for Italian Partita IVA freelancers";
+full description as filled this iteration (see this log's git history for
+exact text, or regenerate from `site/index.html` hero + `documents/`);
+logo `site/brand/normakit-icon-512.png`; categories Productivity +
+Boilerplates; pricing Freemium; platform Web.
