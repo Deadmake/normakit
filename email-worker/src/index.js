@@ -1,8 +1,10 @@
 export default {
   async email(message, env, ctx) {
     const key = `${Date.now()}-${crypto.randomUUID()}.eml`;
+    // message.to is a string in Cloudflare Email Workers; handle both string and array defensively.
+    const to = Array.isArray(message.to) ? message.to.join(",") : String(message.to || "");
     await env.INBOX.put(key, message.raw, {
-      customMetadata: { from: message.from, to: message.to.join(",") },
+      customMetadata: { from: String(message.from || ""), to, subject: String(message.headers?.get?.("subject") || "") },
     });
   },
 
@@ -32,6 +34,7 @@ export default {
         uploaded: o.uploaded,
         from: o.customMetadata?.from,
         to: o.customMetadata?.to,
+        subject: o.customMetadata?.subject,
       }));
     return new Response(JSON.stringify(items, null, 2), {
       headers: { "content-type": "application/json" },

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free GDPR Cookie Policy Generator for Freelancers (EN/IT, NormaKit)</title>
+<meta name="description" content="Free instant GDPR cookie policy generator for freelancers and micro-businesses. Pick the cookies you use, get a ready-to-use cookie policy plus consent banner copy in English or Italian, referencing the Garante and ePrivacy rules. No signup, no account.">
+<link rel="canonical" href="https://normakit.pages.dev/tools/cookie-policy-generator">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free GDPR Cookie Policy Generator (EN/IT), NormaKit">
+<meta property="og:description" content="Pick the cookies you use, get a ready-to-use cookie policy plus consent banner copy in English or Italian. Free, instant, no signup.">
+<meta property="og:url" content="https://normakit.pages.dev/tools/cookie-policy-generator">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "NormaKit Free GDPR Cookie Policy Generator",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "description": "Free tool that generates a GDPR-compliant cookie policy and consent banner copy in English or Italian for freelancers and micro-businesses, referencing the Garante, EU GDPR and the ePrivacy Directive.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+  "brand": { "@type": "Brand", "name": "NormaKit" }
+}
+</script>
+<style>
+  :root {
+    --ink: #1a1d24; --ink-soft: #545b68; --bg: #fbfbfa; --card: #ffffff;
+    --line: #e4e4e0; --accent: #1f5c4c; --accent-ink: #ffffff;
+    --warn-bg: #fdf6e8; --warn-line: #e8d8ab;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.55; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px 64px; }
+  nav.top { padding: 24px 0; }
+  nav.top a { color: var(--accent); text-decoration: none; font-weight: 600; font-size: 14px; }
+  .brand { font-weight: 700; font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
+  h1 { font-size: clamp(26px, 4vw, 34px); line-height: 1.2; margin: 0 0 10px; }
+  .sub { font-size: 16px; color: var(--ink-soft); max-width: 62ch; margin: 0 0 28px; }
+  .badges { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 32px; }
+  .badge { font-size: 12.5px; background: var(--card); border: 1px solid var(--line); padding: 5px 11px; border-radius: 999px; color: var(--ink-soft); }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
+  @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+  .panel h2 { font-size: 16px; margin: 0 0 16px; }
+  label { display: block; font-size: 13.5px; font-weight: 600; margin: 14px 0 5px; }
+  label:first-of-type { margin-top: 0; }
+  label .opt { font-weight: 400; color: var(--ink-soft); }
+  input[type=text], input[type=email], textarea, select {
+    width: 100%; font-family: inherit; font-size: 14px; padding: 9px 11px;
+    border: 1px solid var(--line); border-radius: 8px; background: #fff; color: var(--ink);
+  }
+  textarea { resize: vertical; min-height: 46px; }
+  .check-row { display: flex; align-items: flex-start; gap: 8px; margin: 10px 0; font-size: 13.5px; }
+  .check-row input { margin-top: 3px; flex-shrink: 0; }
+  .check-row label { margin: 0; font-weight: 400; }
+  .sublabel { font-size: 12.5px; color: var(--ink-soft); margin: 2px 0 0 24px; }
+  .langtoggle { display: flex; gap: 6px; margin-bottom: 16px; }
+  .langtoggle button { flex: 1; padding: 8px; font-size: 13.5px; font-weight: 600; border-radius: 8px; border: 1px solid var(--line); background: #fff; color: var(--ink-soft); cursor: pointer; }
+  .langtoggle button.active { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .output-wrap { position: sticky; top: 20px; }
+  .output-actions { display: flex; gap: 8px; margin-bottom: 10px; }
+  .output-actions button { flex: 1; font-size: 13.5px; font-weight: 600; padding: 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--accent); color: var(--accent-ink); cursor: pointer; }
+  .output-actions button.secondary { background: #fff; color: var(--ink); }
+  #output { width: 100%; height: 520px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12.5px; line-height: 1.5; padding: 14px; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: var(--ink); white-space: pre-wrap; }
+  .copied { font-size: 12.5px; color: var(--accent); margin-top: 6px; height: 16px; }
+  .fieldset-title { font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink-soft); margin: 22px 0 4px; font-weight: 700; }
+  .fieldset-title:first-of-type { margin-top: 0; }
+  .callout { background: var(--warn-bg); border: 1px solid var(--warn-line); border-radius: 10px; padding: 14px 16px; font-size: 13px; color: #6b5a1f; margin: 24px 0; }
+  .cta { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px; margin: 32px 0; }
+  .cta h3 { margin-top: 0; font-size: 18px; }
+  .cta p { font-size: 14.5px; color: var(--ink-soft); }
+  a.buy-btn { display: inline-block; text-decoration: none; background: var(--accent); color: var(--accent-ink); font-weight: 600; font-size: 15px; padding: 12px 20px; border-radius: 10px; margin-top: 8px; }
+  .disclaimer { font-size: 12.5px; color: var(--ink-soft); margin-top: 40px; border-top: 1px solid var(--line); padding-top: 16px; }
+  footer { font-size: 12.5px; color: var(--ink-soft); margin-top: 24px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="top"><a href="../">&larr; NormaKit</a></nav>
+  <div class="brand">Free tool</div>
+  <h1>GDPR Cookie Policy Generator</h1>
+  <p class="sub">Pick the cookies your site actually uses on the left, get a ready-to-use cookie
+  policy plus matching consent banner copy on the right, updates live, no signup, nothing sent to
+  a server. Available in English or Italian.</p>
+  <div class="badges">
+    <span class="badge">100% free</span>
+    <span class="badge">No signup</span>
+    <span class="badge">Runs entirely in your browser</span>
+    <span class="badge">EN / IT</span>
+  </div>
+
+  <div class="grid">
+    <div class="panel">
+      <h2>Your details</h2>
+      <div class="langtoggle">
+        <button type="button" id="lang-en" class="active">English</button>
+        <button type="button" id="lang-it">Italiano</button>
+      </div>
+
+      <label for="f-name">Business / trading name <span class="opt">(required)</span></label>
+      <input type="text" id="f-name" placeholder="e.g. Studio Rossi">
+
+      <label for="f-email">Contact email for privacy matters <span class="opt">(required)</span></label>
+      <input type="email" id="f-email" placeholder="privacy@yourdomain.com">
+
+      <label for="f-privacy-url">Link to your privacy policy <span class="opt">(optional)</span></label>
+      <input type="text" id="f-privacy-url" placeholder="https://yourdomain.com/privacy">
+
+      <div class="fieldset-title">Which cookies do you use?</div>
+      <div class="check-row">
+        <input type="checkbox" id="f-necessary" checked disabled>
+        <label for="f-necessary">Necessary (always on, exempt from consent)</label>
+      </div>
+
+      <div class="check-row"><input type="checkbox" id="f-functional"><label for="f-functional">Functional (remember language, currency, login state)</label></div>
+
+      <div class="check-row"><input type="checkbox" id="f-analytics"><label for="f-analytics">Analytics (measure how visitors use the site)</label></div>
+      <select id="f-analytics-type" style="display:none; margin: 4px 0 0 24px; width: calc(100% - 24px);">
+        <option value="ga">Google Analytics (sets cookies, needs consent)</option>
+        <option value="cookieless">A cookieless tool like Plausible or Fathom</option>
+        <option value="other">Another analytics tool</option>
+      </select>
+
+      <div class="check-row"><input type="checkbox" id="f-marketing"><label for="f-marketing">Marketing / advertising (retargeting, ad pixels)</label></div>
+
+      <div class="fieldset-title">Third-party services on your pages <span class="opt" style="text-transform:none; letter-spacing:0;">(optional)</span></div>
+      <div class="check-row"><input type="checkbox" id="f-payment"><label for="f-payment">Payment processor (e.g. Stripe, PayPal)</label></div>
+      <div class="check-row"><input type="checkbox" id="f-embed"><label for="f-embed">Embedded content (e.g. YouTube, Vimeo, maps)</label></div>
+      <div class="check-row"><input type="checkbox" id="f-social"><label for="f-social">Social media buttons or feeds</label></div>
+      <label for="f-thirdparty-extra">Other third parties <span class="opt">(optional, comma-separated)</span></label>
+      <input type="text" id="f-thirdparty-extra" placeholder="e.g. Calendly, Intercom">
+    </div>
+
+    <div class="output-wrap">
+      <div class="output-actions">
+        <button type="button" id="btn-copy">Copy to clipboard</button>
+        <button type="button" id="btn-download" class="secondary">Download .txt</button>
+      </div>
+      <div class="copied" id="copied-msg"></div>
+      <textarea id="output" readonly></textarea>
+    </div>
+  </div>
+
+  <div class="callout">
+    <b>Important:</b> a cookie policy must list the cookies you actually set. This tool builds the
+    structure and the category descriptions for you, but you still need to audit your own site
+    (browser dev tools, Application, Cookies, or a free scanner) and fill in the real cookie names
+    where the template says so. Never list cookies you do not use, and never omit ones you do.
+    Everything happens in your browser: nothing you type is sent anywhere or stored.
+  </div>
+
+  <div class="cta">
+    <h3>Need the whole GDPR set, not just a cookie policy?</h3>
+    <p>NormaKit's full pack has all 7 documents: privacy policy, cookie policy, consent clauses,
+    a full Art. 28 DPA, a mini ROPA template, a breach-notification checklist, and a plain-language
+    guide, in <b>both</b> English and Italian together, delivered as editable .docx and .pdf (not
+    plain text), cross-referencing each other correctly. €29 one-time.</p>
+    <a class="buy-btn" href="../#buy">See the full pack, €29 &rarr;</a>
+  </div>
+
+  <p class="disclaimer"><b>Not legal advice.</b> This tool generates a template for general
+  informational purposes only and does not constitute legal advice. It must be reviewed and adapted
+  to your specific business and, where appropriate, checked by a qualified lawyer or data protection
+  professional before use. NormaKit and its operator accept no liability for outcomes arising from
+  use of this template.</p>
+
+  <footer><a href="../">&larr; Back to NormaKit</a> · Also try the
+  <a href="privacy-policy-generator">free Privacy Policy Generator</a> · © 2026 NormaKit</footer>
+</div>
+
+<script>
+(function () {
+  var lang = 'en';
+  var $ = function (id) { return document.getElementById(id); };
+
+  var analytics = $('f-analytics'), analyticsType = $('f-analytics-type');
+  analytics.addEventListener('change', function () {
+    analyticsType.style.display = analytics.checked ? 'block' : 'none';
+    render();
+  });
+
+  $('lang-en').addEventListener('click', function () { lang = 'en'; setActive(); render(); });
+  $('lang-it').addEventListener('click', function () { lang = 'it'; setActive(); render(); });
+  function setActive() {
+    $('lang-en').classList.toggle('active', lang === 'en');
+    $('lang-it').classList.toggle('active', lang === 'it');
+  }
+
+  function today() {
+    var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    var monthsIt = ['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre'];
+    var d = new Date();
+    return lang === 'en'
+      ? months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear()
+      : d.getDate() + ' ' + monthsIt[d.getMonth()] + ' ' + d.getFullYear();
+  }
+
+  function val(id, fallback) {
+    var v = $(id).value.trim();
+    return v ? v : (fallback || '');
+  }
+
+  // Returns the localized table rows for the categories in use.
+  function categoryRows() {
+    var rows = [];
+    var necessary = {
+      en: { cat: 'Necessary', purpose: 'Make the site work: session handling, security, load balancing, remembering your cookie choice', consent: 'No (strictly necessary, exempt under EU ePrivacy rules)', examples: '[session_id], [csrf_token], [cookie_consent]' },
+      it: { cat: 'Necessari', purpose: 'Far funzionare il sito: gestione sessione, sicurezza, bilanciamento del carico, memorizzazione della scelta sui cookie', consent: 'No (strettamente necessari, esenti secondo la normativa ePrivacy UE)', examples: '[session_id], [csrf_token], [cookie_consent]' }
+    };
+    rows.push(necessary[lang]);
+
+    if ($('f-functional').checked) {
+      rows.push(lang === 'en'
+        ? { cat: 'Functional', purpose: 'Remember your preferences (language, currency, login state)', consent: 'Yes', examples: '[lang_pref], [currency]' }
+        : { cat: 'Funzionali', purpose: 'Ricordare le tue preferenze (lingua, valuta, stato di login)', consent: 'Sì', examples: '[lang_pref], [currency]' });
+    }
+
+    if ($('f-analytics').checked) {
+      var t = analyticsType.value;
+      var enEx = t === 'ga' ? '[_ga], [_gid] (Google Analytics)' : (t === 'cookieless' ? '[none, this tool is cookieless]' : '[list your analytics cookies here]');
+      var itEx = t === 'ga' ? '[_ga], [_gid] (Google Analytics)' : (t === 'cookieless' ? '[nessuno, questo strumento è senza cookie]' : '[elenca qui i cookie del tuo strumento di analisi]');
+      var enPurpose = t === 'cookieless'
+        ? 'Understand how visitors use the site, in aggregate, to improve it. We use a cookieless, privacy-friendly analytics tool that does not set cookies or track you across sites.'
+        : 'Understand how visitors use the site, in aggregate, to improve it';
+      var itPurpose = t === 'cookieless'
+        ? 'Capire come i visitatori usano il sito, in forma aggregata, per migliorarlo. Utilizziamo uno strumento di analisi senza cookie e rispettoso della privacy, che non imposta cookie né ti traccia tra siti diversi.'
+        : 'Capire come i visitatori usano il sito, in forma aggregata, per migliorarlo';
+      rows.push(lang === 'en'
+        ? { cat: 'Analytics', purpose: enPurpose, consent: t === 'cookieless' ? 'Not required for the cookieless tool; still described here for transparency' : 'Yes', examples: enEx }
+        : { cat: 'Analitici', purpose: itPurpose, consent: t === 'cookieless' ? 'Non richiesto per lo strumento senza cookie; descritto qui per trasparenza' : 'Sì', examples: itEx });
+    }
+
+    if ($('f-marketing').checked) {
+      rows.push(lang === 'en'
+        ? { cat: 'Marketing', purpose: 'Track visitors across pages for advertising and retargeting', consent: 'Yes', examples: '[_fbp], [ad_id], [list your ad pixels here]' }
+        : { cat: 'Marketing', purpose: 'Tracciare i visitatori tra le pagine per pubblicità e retargeting', consent: 'Sì', examples: '[_fbp], [ad_id], [elenca qui i tuoi pixel pubblicitari]' });
+    }
+    return rows;
+  }
+
+  function thirdParties() {
+    var list = [];
+    var L = {
+      payment: { en: 'Payment processor (e.g. Stripe, PayPal), for processing payments securely', it: 'Processore di pagamento (es. Stripe, PayPal), per elaborare i pagamenti in modo sicuro' },
+      embed:   { en: 'Embedded content (e.g. YouTube, Vimeo, maps), which may set its own cookies when you view it', it: 'Contenuti incorporati (es. YouTube, Vimeo, mappe), che possono impostare propri cookie quando li visualizzi' },
+      social:  { en: 'Social media buttons or feeds, which may set cookies from the social platform', it: 'Pulsanti o feed dei social media, che possono impostare cookie della piattaforma social' }
+    };
+    if ($('f-payment').checked) list.push(L.payment[lang]);
+    if ($('f-embed').checked) list.push(L.embed[lang]);
+    if ($('f-social').checked) list.push(L.social[lang]);
+    var extra = val('f-thirdparty-extra', '');
+    if (extra) {
+      extra.split(',').forEach(function (e) {
+        e = e.trim();
+        if (e) list.push(e);
+      });
+    }
+    return list;
+  }
+
+  function tableBlock(rows) {
+    return rows.map(function (r) {
+      return '- ' + r.cat + '\n  Purpose: ' + r.purpose + '\n  Consent required: ' + r.consent + '\n  Example cookies: ' + r.examples;
+    }).join('\n\n');
+  }
+  function tableBlockIt(rows) {
+    return rows.map(function (r) {
+      return '- ' + r.cat + '\n  Finalità: ' + r.purpose + '\n  Consenso richiesto: ' + r.consent + '\n  Esempi di cookie: ' + r.examples;
+    }).join('\n\n');
+  }
+
+  function render() {
+    var text = lang === 'en' ? renderEn() : renderIt();
+    $('output').value = text;
+  }
+
+  function renderEn() {
+    var name = val('f-name', '[Your business name]');
+    var email = val('f-email', '[your privacy email]');
+    var privacyUrl = val('f-privacy-url', '');
+    var rows = categoryRows();
+    var tps = thirdParties();
+
+    var lines = [];
+    lines.push('COOKIE POLICY');
+    lines.push('Last updated: ' + today());
+    lines.push('');
+    lines.push('1. What are cookies');
+    lines.push('Cookies are small text files placed on your device when you visit a website. They are widely used to make sites work, work more efficiently, and provide information to the site owner. Some technologies (local storage, pixels, SDKs) work similarly and are covered by the same rules.');
+    lines.push('');
+    lines.push('2. How we use cookies');
+    lines.push(name + ' uses cookies only for the categories described below, and does not use them to identify you beyond what is needed for those purposes.');
+    lines.push('');
+    lines.push('3. Cookie categories we use');
+    lines.push(tableBlock(rows));
+    lines.push('');
+    lines.push('Audit your own site and replace every [bracketed placeholder] above with the real cookie names you set. Remove any category you do not use.');
+    lines.push('');
+    lines.push('4. Consent');
+    lines.push('When you first visit our site, a banner lets you accept or reject non-necessary cookies before any of them are set. Necessary cookies do not require consent. You can change or withdraw your choice at any time via the "Cookie settings" link in our footer. We keep a record of your choice (date and preference) so we can demonstrate compliance if needed.');
+    lines.push('');
+    if (tps.length) {
+      lines.push('5. Third-party cookies');
+      lines.push('Some cookies are set by third parties whose services appear on our pages. We do not control these cookies directly; see each provider\'s own cookie/privacy policy:');
+      tps.forEach(function (t) { lines.push('- ' + t); });
+      lines.push('');
+      lines.push('6. How to manage or withdraw consent');
+    } else {
+      lines.push('5. How to manage or withdraw consent');
+    }
+    lines.push('You can withdraw or change your cookie consent at any time via the "Cookie settings" link in our footer, or by adjusting your browser settings to block or delete cookies (note: blocking necessary cookies may break parts of the site).');
+    lines.push('');
+    lines.push((tps.length ? '7' : '6') + '. More information');
+    lines.push('For how we handle personal data in general, see our privacy policy' + (privacyUrl ? ': ' + privacyUrl : '') + '. Questions about cookies: ' + email + '.');
+    lines.push('');
+    lines.push('=====================================================');
+    lines.push('CONSENT BANNER COPY (paste into your cookie banner)');
+    lines.push('=====================================================');
+    lines.push('');
+    lines.push('We use cookies to run this site (always on) and, with your permission, to ' + bannerPurposeEn(rows) + '. You can change your choice anytime via "Cookie settings" in the footer.');
+    lines.push('');
+    lines.push('  [ Reject all ]   [ Customize ]   [ Accept all ]');
+    lines.push('');
+    lines.push('Banner rules to respect (EDPB / Garante / ePrivacy Directive):');
+    lines.push('- Show it on first visit, before setting any non-necessary cookie.');
+    lines.push('- No pre-ticked boxes: every category except Necessary defaults to OFF.');
+    lines.push('- "Reject all" must be as easy to click as "Accept all" (same size, same prominence, same number of clicks).');
+    lines.push('- Let users change their choice later (persistent "Cookie settings" link).');
+    lines.push('- Log the consent (timestamp + choice).');
+    lines.push('');
+    lines.push('---');
+    lines.push('Not legal advice. This document is a template for general informational purposes only. Audit your site, replace the placeholders, and have it reviewed by a qualified professional before publishing.');
+    lines.push('');
+    lines.push('Generated free at normakit.pages.dev/tools/cookie-policy-generator');
+    return lines.join('\n');
+  }
+
+  function bannerPurposeEn(rows) {
+    var parts = [];
+    var cats = rows.map(function (r) { return r.cat; });
+    if (cats.indexOf('Analytics') > -1) parts.push('understand how it is used');
+    if (cats.indexOf('Functional') > -1) parts.push('remember your preferences');
+    if (cats.indexOf('Marketing') > -1) parts.push('show you relevant ads');
+    if (!parts.length) parts.push('improve it');
+    return parts.join(', ');
+  }
+
+  function renderIt() {
+    var name = val('f-name', '[Nome della tua attività]');
+    var email = val('f-email', '[la tua email privacy]');
+    var privacyUrl = val('f-privacy-url', '');
+    var rows = categoryRows();
+    var tps = thirdParties();
+
+    var lines = [];
+    lines.push('COOKIE POLICY');
+    lines.push('Ultimo aggiornamento: ' + today());
+    lines.push('');
+    lines.push('1. Cosa sono i cookie');
+    lines.push('I cookie sono piccoli file di testo salvati sul tuo dispositivo quando visiti un sito web. Sono ampiamente usati per far funzionare i siti, farli funzionare in modo più efficiente e fornire informazioni al gestore del sito. Alcune tecnologie (local storage, pixel, SDK) funzionano in modo analogo e sono soggette alle stesse regole.');
+    lines.push('');
+    lines.push('2. Come usiamo i cookie');
+    lines.push(name + ' utilizza cookie solo per le categorie descritte di seguito e non li usa per identificarti oltre a quanto necessario per tali finalità.');
+    lines.push('');
+    lines.push('3. Categorie di cookie che usiamo');
+    lines.push(tableBlockIt(rows));
+    lines.push('');
+    lines.push('Verifica il tuo sito e sostituisci ogni [segnaposto tra parentesi] qui sopra con i nomi reali dei cookie che imposti. Elimina qualsiasi categoria non pertinente.');
+    lines.push('');
+    lines.push('4. Consenso');
+    lines.push('Alla prima visita, un banner ti permette di accettare o rifiutare i cookie non necessari prima che vengano impostati. I cookie necessari non richiedono consenso. Puoi modificare o revocare la tua scelta in qualsiasi momento tramite il link "Impostazioni cookie" nel footer. Conserviamo traccia della tua scelta (data e preferenza) per poter dimostrare la conformità se necessario.');
+    lines.push('');
+    if (tps.length) {
+      lines.push('5. Cookie di terze parti');
+      lines.push('Alcuni cookie sono impostati da terze parti i cui servizi compaiono sulle nostre pagine. Non controlliamo direttamente questi cookie; consulta la cookie/privacy policy di ciascun fornitore:');
+      tps.forEach(function (t) { lines.push('- ' + t); });
+      lines.push('');
+      lines.push('6. Come gestire o revocare il consenso');
+    } else {
+      lines.push('5. Come gestire o revocare il consenso');
+    }
+    lines.push('Puoi revocare o modificare il consenso in qualsiasi momento tramite il link "Impostazioni cookie" nel footer, oppure modificando le impostazioni del browser per bloccare o eliminare i cookie (nota: bloccare i cookie necessari potrebbe compromettere parti del sito).');
+    lines.push('');
+    lines.push((tps.length ? '7' : '6') + '. Maggiori informazioni');
+    lines.push('Per come trattiamo i dati personali in generale, vedi la nostra informativa privacy' + (privacyUrl ? ': ' + privacyUrl : '') + '. Domande sui cookie: ' + email + '.');
+    lines.push('');
+    lines.push('=====================================================');
+    lines.push('TESTO DEL BANNER DI CONSENSO (da incollare nel banner)');
+    lines.push('=====================================================');
+    lines.push('');
+    lines.push('Utilizziamo cookie per far funzionare questo sito (sempre attivi) e, con il tuo consenso, per ' + bannerPurposeIt(rows) + '. Puoi modificare la tua scelta in qualsiasi momento tramite "Impostazioni cookie" nel footer.');
+    lines.push('');
+    lines.push('  [ Rifiuta tutto ]   [ Personalizza ]   [ Accetta tutto ]');
+    lines.push('');
+    lines.push('Regole del banner da rispettare (EDPB / Garante / Direttiva ePrivacy):');
+    lines.push('- Mostralo alla prima visita, prima di impostare qualsiasi cookie non necessario.');
+    lines.push('- Nessuna casella pre-selezionata: ogni categoria tranne Necessari è disattivata di default.');
+    lines.push('- "Rifiuta tutto" deve essere facile da cliccare quanto "Accetta tutto" (stessa dimensione, stessa evidenza, stesso numero di click).');
+    lines.push('- Permetti agli utenti di cambiare scelta in seguito (link permanente "Impostazioni cookie").');
+    lines.push('- Registra il consenso (data/ora + scelta).');
+    lines.push('');
+    lines.push('---');
+    lines.push('Non è consulenza legale. Questo documento è un modello a scopo puramente informativo. Verifica il tuo sito, sostituisci i segnaposto e fallo revisionare da un professionista qualificato prima di pubblicarlo.');
+    lines.push('');
+    lines.push('Generato gratuitamente su normakit.pages.dev/tools/cookie-policy-generator');
+    return lines.join('\n');
+  }
+
+  function bannerPurposeIt(rows) {
+    var parts = [];
+    var cats = rows.map(function (r) { return r.cat; });
+    if (cats.indexOf('Analitici') > -1) parts.push('capire come viene utilizzato');
+    if (cats.indexOf('Funzionali') > -1) parts.push('ricordare le tue preferenze');
+    if (cats.indexOf('Marketing') > -1) parts.push('mostrarti annunci pertinenti');
+    if (!parts.length) parts.push('migliorarlo');
+    return parts.join(', ');
+  }
+
+  ['f-name','f-email','f-privacy-url','f-thirdparty-extra','f-functional','f-analytics',
+   'f-analytics-type','f-marketing','f-payment','f-embed','f-social'
+  ].forEach(function (id) {
+    var el = $(id);
+    el.addEventListener('input', render);
+    el.addEventListener('change', render);
+  });
+
+  $('btn-copy').addEventListener('click', function () {
+    var out = $('output');
+    out.select();
+    var ok = false;
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(out.value);
+        ok = true;
+      } else {
+        ok = document.execCommand('copy');
+      }
+    } catch (e) { ok = false; }
+    $('copied-msg').textContent = ok ? (lang === 'en' ? 'Copied to clipboard.' : 'Copiato negli appunti.') : '';
+    if (ok) setTimeout(function () { $('copied-msg').textContent = ''; }, 2500);
+  });
+
+  $('btn-download').addEventListener('click', function () {
+    var blob = new Blob([$('output').value], { type: 'text/plain;charset=utf-8' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = lang === 'en' ? 'cookie-policy.txt' : 'cookie-policy-it.txt';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  });
+
+  render();
+})();
+</script>
+  <script>
+    window.uetq = window.uetq || [];
+    window.uetq.push('consent', 'default', { 'ad_storage': 'denied', 'analytics_storage': 'denied' });
+  </script>
+  <script>
+    (function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"187263675", enableAutoSpaTracking:true};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");
+  </script>
+  <script src="/js/consent.js" defer></script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "082e73ff60604f31b0df22bc423c4206"}'></script>
+</body>
+</html>
