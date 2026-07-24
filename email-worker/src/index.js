@@ -3,7 +3,10 @@ export default {
     const key = `${Date.now()}-${crypto.randomUUID()}.eml`;
     // message.to is a string in Cloudflare Email Workers; handle both string and array defensively.
     const to = Array.isArray(message.to) ? message.to.join(",") : String(message.to || "");
-    await env.INBOX.put(key, message.raw, {
+    // message.raw is a ReadableStream with no known length; R2.put requires a fixed length,
+    // so buffer the full MIME into an ArrayBuffer before storing (email bodies are small).
+    const raw = await new Response(message.raw).arrayBuffer();
+    await env.INBOX.put(key, raw, {
       customMetadata: { from: String(message.from || ""), to, subject: String(message.headers?.get?.("subject") || "") },
     });
   },
